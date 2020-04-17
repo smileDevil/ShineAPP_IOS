@@ -8,6 +8,7 @@
 
 import UIKit
 import Charts
+import MJRefresh
 class LineChartsVC: UIViewController {
     private lazy var myViewModel : HistoryRequestModel = HistoryRequestModel()
     private var mModelList : [SimulatesCurveInfoModel] = [SimulatesCurveInfoModel]()
@@ -18,6 +19,16 @@ class LineChartsVC: UIViewController {
     private var lineChartView :  LineChartView!
     private var xVals:[String] = []
     private var yValue:[NSNumber] = []
+    
+    
+       fileprivate lazy var tableView : UITableView  = {
+        let tableview = UITableView(frame: CGRect(x: 0, y: 64, width: Int(mScreenH), height: Int(mScreenW) - 64))
+           tableview.tag = 1001
+           tableview.separatorStyle = UITableViewCell.SeparatorStyle.none
+           tableview.backgroundColor = mainColor
+           return tableview
+       }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "历史模拟量折线图"
@@ -27,7 +38,7 @@ class LineChartsVC: UIViewController {
               let headView : UIView  = UIView()
               headView.frame = CGRect(x: 0, y: 0, width: Int(mScreenH), height: Int(navH))
               headView.backgroundColor = cellBgColor
-              self.view.addSubview(headView)
+          
               
               let backButton = UIButton()
               
@@ -43,14 +54,31 @@ class LineChartsVC: UIViewController {
               titleLabel.textColor = UIColor.white
               titleLabel.text  = "历史模拟量折线图"
               headView.addSubview(titleLabel)
-              
+             self.view.addSubview(headView)
+             self.view.addSubview(tableView)
         
-         loadData()
-       
+         setRefresh()
     }
+    
+    
+    //添加refresh
+       func setRefresh(){
+           let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(loadData))
+           // 2.设置header属性
+            header?.setTitle("下拉刷新", for: .idle);
+            header?.setTitle("释放刷新", for: .pulling)
+            header?.setTitle("加载中...", for: .refreshing)
+            header?.setTitle("", for: .willRefresh)
+            header?.lastUpdatedTimeLabel.isHidden = true
+            // 3.设置tableview的header
+            tableView.mj_header = header
+            // 4.开始刷新
+            tableView.mj_header.beginRefreshing()
+       }
+    
  
-    func loadData(){
-        self.myViewModel.GetKj70HisSimulatesCurveInfo(sensorNum: "002A001", beginTime: "2019-11-14 00:00:00", endTime: "2019-11-14 23:00:00") {
+  @objc func loadData(){
+        self.myViewModel.GetKj70HisSimulatesCurveInfo(sensorNum: mSensor, beginTime: beginDate, endTime: endDate) {
             if self.myViewModel.lineDataModels.count > 0 {
                 self.mModelList.removeAll()
                 self.mModelList = self.myViewModel.lineDataModels
@@ -60,11 +88,12 @@ class LineChartsVC: UIViewController {
                     let xval : String = model.statisticTime!
                     let indexStart = xval.startIndex
                     let beginIndex = xval.index(indexStart, offsetBy: 11)
-                    let endIndex = xval.index(indexStart, offsetBy: xval.count)
+                    let endIndex = xval.index(indexStart, offsetBy: xval.count - 1)
                     let newxval = xval[beginIndex...endIndex]
                     self.xVals.append(String(newxval))
                 }
-                
+                self.tableView.mj_header.endRefreshing()
+                self.tableView.isHidden = true
                 self.addLineChartView()
             }
         }
@@ -105,6 +134,8 @@ class LineChartsVC: UIViewController {
 //        xAxis.spaceBetweenLabels = 4;//设置label间隔
         xAxis.labelTextColor = UIColor.white//label文字颜色
         xAxis.axisLineColor = UIColor.white
+        
+        
         xAxis.valueFormatter = IndexAxisValueFormatter(values: xVals)
         
         
@@ -134,7 +165,7 @@ class LineChartsVC: UIViewController {
             let dataEntry = ChartDataEntry(x:Double(index), y: Double(val))
             dataEntris.append(dataEntry)
         }
-        let dataset = LineChartDataSet(values: dataEntris, label: "平均值")
+        let dataset = LineChartDataSet(values: dataEntris, label: "\(beginDate) 15895058917平均值")
         dataset.setColor(UIColor.yellow)//线颜色
         dataset.setCircleColor(UIColor.white) // 点颜色
         dataset.valueColors = [UIColor.white] // 字颜色
@@ -152,13 +183,7 @@ class LineChartsVC: UIViewController {
 //        dataset.drawCirclesEnabled = false
         dataset.drawValuesEnabled = true
                 
-//                填充色
-//        let gradientColors = [ChartColorTemplates.colorFromString("#00ff0000").cgColor, UIColor.yellow.cgColor]
-//                let gradient = CGGradient(colorsSpace: nil, colors: gradientColors as CFArray, locations: nil)
-//        
-//                dataset.fillAlpha = 1.0
-//                dataset.fill = Fill.fillWithLinearGradient(gradient!, angle: 90)
-        
+
         lineChartView.data = LineChartData(dataSet: dataset)
         lineChartView.animate(xAxisDuration: 1.0, yAxisDuration: 1.0, easingOption: .easeInBack)
     }

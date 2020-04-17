@@ -29,6 +29,9 @@ class HistoryRequestModel: NSObject {
         mEndTime = endTime
         mTypeCode = typeCode
         mSensornum = sensornum
+        if mSensornum != "" {
+            mTypeCode = ""
+        }
         mIndex = index
         mPageSize = pageSize
         //1:定义参数
@@ -71,7 +74,7 @@ class HistoryRequestModel: NSObject {
                   guard let resultCount = resultDic["total"] as? NSInteger else {
                       return
                   }
-                guard let resultArrBefor = resultDic["rows"] as? [[String : NSObject]] else {
+                guard let resultArrBefor = resultDic["rows"] as? [[[String : NSObject]]] else {
                       return
                   }
                 guard let resultArr = resultArrBefor[0] as? [[String : NSObject]] else {

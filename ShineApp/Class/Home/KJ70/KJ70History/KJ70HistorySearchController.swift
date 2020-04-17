@@ -179,11 +179,18 @@ extension KJ70HistorySearchController {
     //点击确认按钮
     @objc func makeSureClick(){
         if self.selectTitle == "历史模拟量折线图" {
-//            if(selectSensorModel == nil) {
-//                AlertHepler.showAlert(titleStr: nil, msgStr: "需要选择测点", currentVC: self, cancelHandler: { (canleAction) in
-//                return
-//             }, otherBtns: nil, otherHandler: nil)
-//            }
+            if(selectSensorModel == nil) {
+                AlertHepler.showAlert(titleStr: nil, msgStr: "需要选择测点", currentVC: self, cancelHandler: { (canleAction) in
+                return
+             }, otherBtns: nil, otherHandler: nil)
+                  return
+            }
+            if !(self.begintTimeLabel.text == self.endTimeLabel.text) {
+                AlertHepler.showAlert(titleStr: nil, msgStr: "开始时间和结束时间必须为同一天", currentVC: self, cancelHandler: { (canleAction) in
+                        
+                            }, otherBtns: nil, otherHandler: nil)
+                       return
+            }
             let vc : LineChartsVC = LineChartsVC()
             vc.beginDate = self.begintTimeLabel.text! + " 00:00:00"
             vc.endDate = self.endTimeLabel.text! + " 23:59:29"

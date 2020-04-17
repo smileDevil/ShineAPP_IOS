@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+@objcMembers
 class SimulatesCurveInfoModel: NSObject {
     var maxValue : NSNumber!
      var avgValue : NSNumber!
