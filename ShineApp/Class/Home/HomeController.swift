@@ -120,7 +120,10 @@ extension HomeController{
        typeViewsAction(flag: 2,tag:sender.tag)
         if(sender.tag == 1 ){
             self.navigationController?.pushViewController(KJ70DataController(), animated: true)
-        }else{
+        }else if sender.tag == 0 {
+            self.navigationController?.pushViewController(KJ128DataController(), animated: true)
+        }
+        else{
             AlertHepler.showAlert(titleStr: "提示", msgStr: "功能暂待后期开发", currentVC: self, cancelHandler: { (canleAction) in
                 return
             }, otherBtns: nil, otherHandler: nil)

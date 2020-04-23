@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Alamofire
 class LoginViewController: BaseViewController {
 //
     @IBOutlet weak var userBackView: UIView!
@@ -21,10 +21,39 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         setUpViews();
         
+       currentNetReachability()
         //注册点击事件
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
     }
 
+
+func currentNetReachability() {
+            let manager = NetworkReachabilityManager()
+            manager?.listener = { status in
+                var statusStr: String?
+                switch status {
+                case .unknown:
+                    statusStr = "未识别的网络"
+                    break
+                case .notReachable:
+                    statusStr = "不可用的网络(未连接)"
+                case .reachable:
+                    if (manager?.isReachableOnWWAN)! {
+                        statusStr = "2G,3G,4G...的网络"
+                    } else if (manager?.isReachableOnEthernetOrWiFi)! {
+                        statusStr = "wifi的网络";
+                    }
+                    break
+                }
+                if statusStr == "不可用的网络(未连接)"{
+                    AlertHepler.showAlert(titleStr: nil, msgStr: "当前网络不可用,请选择可用网络", currentVC: self, cancelHandler: { (canleAction) in
+                                   return
+                               }, otherBtns: nil, otherHandler: nil)
+                }
+            }
+            manager?.startListening()
+    }
+   
     
 }
 extension LoginViewController{

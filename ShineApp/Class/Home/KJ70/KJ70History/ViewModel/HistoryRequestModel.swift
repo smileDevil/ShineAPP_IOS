@@ -29,15 +29,15 @@ class HistoryRequestModel: NSObject {
         mEndTime = endTime
         mTypeCode = typeCode
         mSensornum = sensornum
-        if mSensornum != "" {
-            mTypeCode = ""
-        }
+//        if mSensornum != "" {
+//            mTypeCode = ""
+//        }
         mIndex = index
         mPageSize = pageSize
         //1:定义参数
         let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
         let requestUrl = REQUESTURL + mUrl
-        let parameters = ["Minecode":mineCode,"BeginTime":mBeginTime,"EndTime":mEndTime,"RowIndex":mIndex,"RowSize":mPageSize, "Typecode":mTypeCode,"Sensornums":mSensornum] as [String : Any]
+        let parameters = ["Minecode":mineCode,"BeginTime":mBeginTime,"EndTime":mEndTime,"RowIndex":mIndex,"RowSize":mPageSize, "Typecode":mTypeCode,"Sensornum":mSensornum] as [String : Any]
         NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
             guard let resultDic =  result as? [String : NSObject]else {
                 return

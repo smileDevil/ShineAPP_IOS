@@ -11,6 +11,7 @@ import MJRefresh
 private let HEAD_VIEW_HEIGHT = 0
 
 private var mModelList : [KJ70HistoryDataModel] = [KJ70HistoryDataModel]()
+private var noDataView : ListStateView = ListStateView()
 class Kj70HistoryListController: UIViewController {
     var beginDate : String!
     var endDate : String!
@@ -23,7 +24,6 @@ class Kj70HistoryListController: UIViewController {
     var pageIndex = 0
     var mPageSize = 50
     private lazy var myViewModel : HistoryRequestModel = HistoryRequestModel()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
@@ -61,6 +61,9 @@ class Kj70HistoryListController: UIViewController {
         tableview.register(UINib(nibName: CellStr, bundle: nil), forCellReuseIdentifier: CellStr)
         
         self.view.addSubview(tableview)
+        noDataView.frame = CGRect(x: 0, y: HEAD_VIEW_HEIGHT, width: Int(mScreenW), height: Int(mScreenH) - HEAD_VIEW_HEIGHT - cvTopNavHeight - Int(navigationBarHeight))
+        noDataView.isHidden = true
+        self.view.addSubview(noDataView)
         //           let headView : UIView  = UIView()
         //           headView.frame = CGRect(x: 0, y: 0, width: Int(mScreenW), height: HEAD_VIEW_HEIGHT)
         //           headView.backgroundColor = mainColor
@@ -106,6 +109,9 @@ class Kj70HistoryListController: UIViewController {
             mModelList.removeAll()
             if self.myViewModel.historyDataModels.count > 0 {
                 mModelList = self.myViewModel.historyDataModels
+                noDataView.isHidden = true
+            }else{
+                noDataView.isHidden = false
             }
             if self.myViewModel.historyDataCount > self.myViewModel.historyDataModels.count {
                 if self.tableview.mj_footer == nil {
@@ -126,14 +132,16 @@ class Kj70HistoryListController: UIViewController {
         myViewModel.requestHistoryData(url: mUrl, beginTime: beginDate, endTime: endDate,index: pageIndex,pageSize: mPageSize, typeCode: mDeviceType, sensornum: mSensor) {
             mModelList.removeAll()
             
-            if self.myViewModel.historyDataCount == self.myViewModel.historyDataModels.count {
-                self.pageIndex  = self.pageIndex - 1
+            if self.pageIndex != 0 && self.myViewModel.historyDataCount == self.myViewModel.historyDataModels.count {
+                self.pageIndex  = self.myViewModel.historyDataCount
+   
                 self.tableview.mj_footer.endRefreshingWithNoMoreData()
             }else{
                 
-                
                 if self.myViewModel.historyDataModels.count > 0 {
                     mModelList = self.myViewModel.historyDataModels
+
+                }else{
                 }
                 self.tableview.mj_footer.endRefreshing()
                 //这边需判断没有更多数据的情况

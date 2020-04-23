@@ -244,7 +244,7 @@ extension KJ70HistorySearchController:UIPickerViewDelegate,UIPickerViewDataSourc
             pickerView.dataSource = self
             pickerView.backgroundColor = mainColor
             //设置PickerView默认值
-            pickerView.selectRow(1, inComponent: 0, animated: true)
+            pickerView.selectRow(0, inComponent: 0, animated: true)
             pickerBottomView.addSubview(pickerView)
         }else if flag == 2 || flag == 3{
             

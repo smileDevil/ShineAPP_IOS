@@ -230,6 +230,24 @@
 		378F3FCC2446F9B9008C76BE /* LineChartsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3FCA2446F9B9008C76BE /* LineChartsVC.swift */; };
 		378F3FCD2446F9B9008C76BE /* LineChartsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378F3FCB2446F9B9008C76BE /* LineChartsVC.xib */; };
 		378F3FCF2447FD63008C76BE /* SimulatesCurveInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3FCE2447FD63008C76BE /* SimulatesCurveInfoModel.swift */; };
+		37AD9F59244ED0DB00261330 /* KJ128DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9F57244ED0DB00261330 /* KJ128DataController.swift */; };
+		37AD9F5A244ED0DB00261330 /* KJ128DataController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AD9F58244ED0DB00261330 /* KJ128DataController.xib */; };
+		37AD9F5D244EDFCE00261330 /* KJ128RealTimePoepleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9F5B244EDFCE00261330 /* KJ128RealTimePoepleVC.swift */; };
+		37AD9F5E244EDFCE00261330 /* KJ128RealTimePoepleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AD9F5C244EDFCE00261330 /* KJ128RealTimePoepleVC.xib */; };
+		37AD9F61244EDFE600261330 /* KJ128RealTimeCarsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9F5F244EDFE600261330 /* KJ128RealTimeCarsVC.swift */; };
+		37AD9F62244EDFE600261330 /* KJ128RealTimeCarsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AD9F60244EDFE600261330 /* KJ128RealTimeCarsVC.xib */; };
+		37AD9F65244EE00100261330 /* KJ128RealTimeWaringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9F63244EE00100261330 /* KJ128RealTimeWaringVC.swift */; };
+		37AD9F66244EE00100261330 /* KJ128RealTimeWaringVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AD9F64244EE00100261330 /* KJ128RealTimeWaringVC.xib */; };
+		37AD9F69244EE02800261330 /* KJ128RealTimeStationStateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9F67244EE02800261330 /* KJ128RealTimeStationStateVC.swift */; };
+		37AD9F6A244EE02800261330 /* KJ128RealTimeStationStateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AD9F68244EE02800261330 /* KJ128RealTimeStationStateVC.xib */; };
+		37AD9F6D244EE05400261330 /* KJ128RealTimeAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9F6B244EE05400261330 /* KJ128RealTimeAreaVC.swift */; };
+		37AD9F6E244EE05400261330 /* KJ128RealTimeAreaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AD9F6C244EE05400261330 /* KJ128RealTimeAreaVC.xib */; };
+		37AD9F71244EE07500261330 /* KJ128RealTimeCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9F6F244EE07500261330 /* KJ128RealTimeCardVC.swift */; };
+		37AD9F72244EE07500261330 /* KJ128RealTimeCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AD9F70244EE07500261330 /* KJ128RealTimeCardVC.xib */; };
+		37AD9F74244EE3B900261330 /* KJ128RealTimePeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9F73244EE3B900261330 /* KJ128RealTimePeopleModel.swift */; };
+		37AD9F77244EE97500261330 /* KJ128RealTimePeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9F75244EE97500261330 /* KJ128RealTimePeopleCell.swift */; };
+		37AD9F78244EE97500261330 /* KJ128RealTimePeopleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AD9F76244EE97500261330 /* KJ128RealTimePeopleCell.xib */; };
+		37AD9F7A2450052E00261330 /* Kj128RealTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9F792450052E00261330 /* Kj128RealTimeViewModel.swift */; };
 		37B399F524331F19005240B5 /* TypeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B399F324331F19005240B5 /* TypeViewCell.xib */; };
 		37B399F624331F19005240B5 /* TypeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B399F424331F19005240B5 /* TypeViewCell.swift */; };
 		37B399F824343628005240B5 /* RealTimeEquipmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B399F724343628005240B5 /* RealTimeEquipmentModel.swift */; };
@@ -487,6 +505,24 @@
 		378F3FCA2446F9B9008C76BE /* LineChartsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartsVC.swift; sourceTree = "<group>"; };
 		378F3FCB2446F9B9008C76BE /* LineChartsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineChartsVC.xib; sourceTree = "<group>"; };
 		378F3FCE2447FD63008C76BE /* SimulatesCurveInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatesCurveInfoModel.swift; sourceTree = "<group>"; };
+		37AD9F57244ED0DB00261330 /* KJ128DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128DataController.swift; sourceTree = "<group>"; };
+		37AD9F58244ED0DB00261330 /* KJ128DataController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128DataController.xib; sourceTree = "<group>"; };
+		37AD9F5B244EDFCE00261330 /* KJ128RealTimePoepleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimePoepleVC.swift; sourceTree = "<group>"; };
+		37AD9F5C244EDFCE00261330 /* KJ128RealTimePoepleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128RealTimePoepleVC.xib; sourceTree = "<group>"; };
+		37AD9F5F244EDFE600261330 /* KJ128RealTimeCarsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimeCarsVC.swift; sourceTree = "<group>"; };
+		37AD9F60244EDFE600261330 /* KJ128RealTimeCarsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128RealTimeCarsVC.xib; sourceTree = "<group>"; };
+		37AD9F63244EE00100261330 /* KJ128RealTimeWaringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimeWaringVC.swift; sourceTree = "<group>"; };
+		37AD9F64244EE00100261330 /* KJ128RealTimeWaringVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128RealTimeWaringVC.xib; sourceTree = "<group>"; };
+		37AD9F67244EE02800261330 /* KJ128RealTimeStationStateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimeStationStateVC.swift; sourceTree = "<group>"; };
+		37AD9F68244EE02800261330 /* KJ128RealTimeStationStateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128RealTimeStationStateVC.xib; sourceTree = "<group>"; };
+		37AD9F6B244EE05400261330 /* KJ128RealTimeAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimeAreaVC.swift; sourceTree = "<group>"; };
+		37AD9F6C244EE05400261330 /* KJ128RealTimeAreaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128RealTimeAreaVC.xib; sourceTree = "<group>"; };
+		37AD9F6F244EE07500261330 /* KJ128RealTimeCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimeCardVC.swift; sourceTree = "<group>"; };
+		37AD9F70244EE07500261330 /* KJ128RealTimeCardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128RealTimeCardVC.xib; sourceTree = "<group>"; };
+		37AD9F73244EE3B900261330 /* KJ128RealTimePeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimePeopleModel.swift; sourceTree = "<group>"; };
+		37AD9F75244EE97500261330 /* KJ128RealTimePeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimePeopleCell.swift; sourceTree = "<group>"; };
+		37AD9F76244EE97500261330 /* KJ128RealTimePeopleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128RealTimePeopleCell.xib; sourceTree = "<group>"; };
+		37AD9F792450052E00261330 /* Kj128RealTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kj128RealTimeViewModel.swift; sourceTree = "<group>"; };
 		37B399F324331F19005240B5 /* TypeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeViewCell.xib; sourceTree = "<group>"; };
 		37B399F424331F19005240B5 /* TypeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeViewCell.swift; sourceTree = "<group>"; };
 		37B399F724343628005240B5 /* RealTimeEquipmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeEquipmentModel.swift; sourceTree = "<group>"; };
@@ -781,6 +817,7 @@
 				372777A72425DB7900816C72 /* HomeController.swift */,
 				372777A82425DB7900816C72 /* HomeController.xib */,
 				3727783A242C7BD200816C72 /* KJ70 */,
+				37AD9F4F244ECBC400261330 /* KJ28 */,
 				3727780B2429F77100816C72 /* TJPageView */,
 				372777EB24284ADE00816C72 /* Views */,
 			);
@@ -970,6 +1007,71 @@
 				376FF1DB2419D9BD00F0DAFA /* VipBadge.swift */,
 			);
 			path = CommonView;
+			sourceTree = "<group>";
+		};
+		37AD9F4F244ECBC400261330 /* KJ28 */ = {
+			isa = PBXGroup;
+			children = (
+				37AD9F51244ECC4400261330 /* KJ128History */,
+				37AD9F50244ECC3500261330 /* KJ28RealTime */,
+			);
+			path = KJ28;
+			sourceTree = "<group>";
+		};
+		37AD9F50244ECC3500261330 /* KJ28RealTime */ = {
+			isa = PBXGroup;
+			children = (
+				37AD9F54244ECC7500261330 /* ViewModel */,
+				37AD9F53244ECC5C00261330 /* Model */,
+				37AD9F52244ECC5400261330 /* View */,
+				37AD9F57244ED0DB00261330 /* KJ128DataController.swift */,
+				37AD9F58244ED0DB00261330 /* KJ128DataController.xib */,
+				37AD9F5B244EDFCE00261330 /* KJ128RealTimePoepleVC.swift */,
+				37AD9F5C244EDFCE00261330 /* KJ128RealTimePoepleVC.xib */,
+				37AD9F5F244EDFE600261330 /* KJ128RealTimeCarsVC.swift */,
+				37AD9F60244EDFE600261330 /* KJ128RealTimeCarsVC.xib */,
+				37AD9F63244EE00100261330 /* KJ128RealTimeWaringVC.swift */,
+				37AD9F64244EE00100261330 /* KJ128RealTimeWaringVC.xib */,
+				37AD9F67244EE02800261330 /* KJ128RealTimeStationStateVC.swift */,
+				37AD9F68244EE02800261330 /* KJ128RealTimeStationStateVC.xib */,
+				37AD9F6B244EE05400261330 /* KJ128RealTimeAreaVC.swift */,
+				37AD9F6C244EE05400261330 /* KJ128RealTimeAreaVC.xib */,
+				37AD9F6F244EE07500261330 /* KJ128RealTimeCardVC.swift */,
+				37AD9F70244EE07500261330 /* KJ128RealTimeCardVC.xib */,
+			);
+			path = KJ28RealTime;
+			sourceTree = "<group>";
+		};
+		37AD9F51244ECC4400261330 /* KJ128History */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KJ128History;
+			sourceTree = "<group>";
+		};
+		37AD9F52244ECC5400261330 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37AD9F75244EE97500261330 /* KJ128RealTimePeopleCell.swift */,
+				37AD9F76244EE97500261330 /* KJ128RealTimePeopleCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37AD9F53244ECC5C00261330 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37AD9F73244EE3B900261330 /* KJ128RealTimePeopleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37AD9F54244ECC7500261330 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				37AD9F792450052E00261330 /* Kj128RealTimeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		37B39A112436DC04005240B5 /* KJ70RealTime */ = {
@@ -1173,11 +1275,13 @@
 				376FF1942419CA0F00F0DAFA /* 006gWxMEly8g0bjpl3ynij30kv0kv773.jpg in Resources */,
 				3727786624317DB800816C72 /* onepage_blue_selected@2x.png in Resources */,
 				376FF1832419CA0F00F0DAFA /* 630584a6gy1gau54zl806j20m80etmzo.jpg in Resources */,
+				37AD9F78244EE97500261330 /* KJ128RealTimePeopleCell.xib in Resources */,
 				376FF1A02419CA0F00F0DAFA /* bca7fdafly1gax1gqdnboj20c80atmxp.jpg in Resources */,
 				3727787224317DB800816C72 /* mine_blue.png in Resources */,
 				3727786D24317DB800816C72 /* home_blue_selected@3x.png in Resources */,
 				376FF1B42419CA1000F0DAFA /* 006PdkDogy1gap6ngiyn3j30u011idle.jpg in Resources */,
 				376FF1922419CA0F00F0DAFA /* bca7fdafgw1ekhkps65b1j2050050dg4.jpg in Resources */,
+				37AD9F72244EE07500261330 /* KJ128RealTimeCardVC.xib in Resources */,
 				372777C92425EA9B00816C72 /* save_main.png in Resources */,
 				376FF1852419CA0F00F0DAFA /* 8a0b5544gy1gauy2flua6j20u00hitab.jpg in Resources */,
 				376FF1CD2419CA1000F0DAFA /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg in Resources */,
@@ -1186,6 +1290,7 @@
 				376FF19A2419CA0F00F0DAFA /* 006gWxMEly1gavap8vsqaj30hs0bwgm6.jpg in Resources */,
 				37B39A23243B0E34005240B5 /* shaixuan@2x.png in Resources */,
 				376FF1BE2419CA1000F0DAFA /* 700a34f6gy1gaunsxhp4pj20j60pkn1k.jpg in Resources */,
+				37AD9F5A244ED0DB00261330 /* KJ128DataController.xib in Resources */,
 				37277823242AE98500816C72 /* StationController.xib in Resources */,
 				3727785B24317DB800816C72 /* home_blue@3x.png in Resources */,
 				376FF18D2419CA0F00F0DAFA /* c5aa834fgy1gauzrb7s5ej20tz13qh5x.jpg in Resources */,
@@ -1248,6 +1353,7 @@
 				376FF1B32419CA1000F0DAFA /* c5aa834fgy1gauzr95r6fj20tw0l3dq4.jpg in Resources */,
 				376FF1882419CA0F00F0DAFA /* 76297935ly1gatz8obqvkj22c0340npe.jpg in Resources */,
 				376FF1A82419CA1000F0DAFA /* 700a34f6ly8g9a29rjt92j20fn0iqdg8.jpg in Resources */,
+				37AD9F5E244EDFCE00261330 /* KJ128RealTimePoepleVC.xib in Resources */,
 				37B39A17243703BB005240B5 /* search@3x.png in Resources */,
 				372777832424AC3B00816C72 /* xinlang.png in Resources */,
 				376FF1952419CA0F00F0DAFA /* 6ec3b446gy1gavd51jc4lj20j60pmwhl.jpg in Resources */,
@@ -1278,15 +1384,18 @@
 				376FF1C82419CA1000F0DAFA /* 4e7f0c83gy1gam2mjhk8zj21hc0v6wnx.jpg in Resources */,
 				3727786F24317DB800816C72 /* mine_blue_selected.png in Resources */,
 				372777B22425DBAE00816C72 /* OnePageController.xib in Resources */,
+				37AD9F66244EE00100261330 /* KJ128RealTimeWaringVC.xib in Resources */,
 				372CF5AA243C180E00CBE399 /* KJ70HistorySearchController.xib in Resources */,
 				3727778F2424AC3B00816C72 /* setting.png in Resources */,
 				372778042428D9D900816C72 /* back_arrow@3x.png in Resources */,
+				37AD9F62244EDFE600261330 /* KJ128RealTimeCarsVC.xib in Resources */,
 				376FF1C52419CA1000F0DAFA /* 9dc7402fgy1gavd37l9nwj20j60ny44q.jpg in Resources */,
 				376FF17F2419CA0F00F0DAFA /* bca7fdafly1gax1gqdg6qj20c80avdgl.jpg in Resources */,
 				376FF1C42419CA1000F0DAFA /* 76297935ly8g4phfkq68hj20u00u0mzt.jpg in Resources */,
 				376FF1A12419CA1000F0DAFA /* c5aa834fgy1gauzr6venkj20u01hc12f.jpg in Resources */,
 				376FF19C2419CA0F00F0DAFA /* eb5c94aegy1gav25ox6dvj20u00k1go9.jpg in Resources */,
 				376FF1C62419CA1000F0DAFA /* 700a34f6gy1gaunswwui7j20j60pl78e.jpg in Resources */,
+				37AD9F6A244EE02800261330 /* KJ128RealTimeStationStateVC.xib in Resources */,
 				376FF1962419CA0F00F0DAFA /* 006gWxMEly1gavap88gttj30hs0a0dgf.jpg in Resources */,
 				376FF18A2419CA0F00F0DAFA /* 9dc7402fgy1gavd38kqjtj20j60nyn1d.jpg in Resources */,
 				376FF19D2419CA0F00F0DAFA /* 8a0b5544gy1gauy2g35yoj20u00fomzf.jpg in Resources */,
@@ -1301,6 +1410,7 @@
 				37277839242B2BED00816C72 /* OpOutController.xib in Resources */,
 				372777CA2425EA9B00816C72 /* fs_main.png in Resources */,
 				376FF1A42419CA1000F0DAFA /* c5aa834fgy1gauzr86bp5j20pb0w47in.jpg in Resources */,
+				37AD9F6E244EE05400261330 /* KJ128RealTimeAreaVC.xib in Resources */,
 				3727786C24317DB800816C72 /* system_blue@2x.png in Resources */,
 				372777EA2426073B00816C72 /* banner_main.png in Resources */,
 				3727786424317DB800816C72 /* system_blue_selected@3x.png in Resources */,
@@ -1368,16 +1478,20 @@
 				37277838242B2BED00816C72 /* OpOutController.swift in Sources */,
 				372CF5B8243EEF0200CBE399 /* HistoryRequestModel.swift in Sources */,
 				372CF5AE243D9DFD00CBE399 /* KJ70SensorModel.swift in Sources */,
+				37AD9F71244EE07500261330 /* KJ128RealTimeCardVC.swift in Sources */,
 				372777B52425DBC200816C72 /* LiveController.swift in Sources */,
 				37B39A092434670D005240B5 /* RealTimeStationCell.swift in Sources */,
 				37B399FE2434596B005240B5 /* RealTimeStationModel.swift in Sources */,
 				372CF5B1243EA7C400CBE399 /* Kj70HistoryListController.swift in Sources */,
+				37AD9F7A2450052E00261330 /* Kj128RealTimeViewModel.swift in Sources */,
 				372778172429F77200816C72 /* TJPageView.swift in Sources */,
 				376FF1D62419CC1B00F0DAFA /* UiColor-extension.swift in Sources */,
 				37277822242AE98500816C72 /* StationController.swift in Sources */,
 				37B39A0F2435A211005240B5 /* RealTimeOpenOutCell.swift in Sources */,
+				37AD9F6D244EE05400261330 /* KJ128RealTimeAreaVC.swift in Sources */,
 				372777DC2425EE8800816C72 /* CollectionCycleCell.swift in Sources */,
 				378F3FCC2446F9B9008C76BE /* LineChartsVC.swift in Sources */,
+				37AD9F61244EDFE600261330 /* KJ128RealTimeCarsVC.swift in Sources */,
 				372777A02425AA0E00816C72 /* LoginViewController.swift in Sources */,
 				3727779A2425A5F400816C72 /* View-Extension.swift in Sources */,
 				37B399FC243438AA005240B5 /* RealTimeTestPointModel.swift in Sources */,
@@ -1398,6 +1512,7 @@
 				372778152429F77200816C72 /* TJPageCollectionView.swift in Sources */,
 				372CF5BC243EF7D500CBE399 /* HistoryWaringCell.swift in Sources */,
 				372777AD2425DB9A00816C72 /* MineController.swift in Sources */,
+				37AD9F5D244EDFCE00261330 /* KJ128RealTimePoepleVC.swift in Sources */,
 				376FF1DE2419DE4E00F0DAFA /* Post.swift in Sources */,
 				37B39A0124346304005240B5 /* RealTimeEquipmentCell.swift in Sources */,
 				372CF5AC243D8E8F00CBE399 /* File.swift in Sources */,
@@ -1421,19 +1536,24 @@
 				372777DF2425F19E00816C72 /* JybCycieView.swift in Sources */,
 				372CF5A9243C180E00CBE399 /* KJ70HistorySearchController.swift in Sources */,
 				372777F42428A3A300816C72 /* KJ70DataController.swift in Sources */,
+				37AD9F77244EE97500261330 /* KJ128RealTimePeopleCell.swift in Sources */,
+				37AD9F65244EE00100261330 /* KJ128RealTimeWaringVC.swift in Sources */,
 				3727787D2433014D00816C72 /* SelectView.swift in Sources */,
 				37B399F824343628005240B5 /* RealTimeEquipmentModel.swift in Sources */,
 				372778142429F77200816C72 /* TJTitleView.swift in Sources */,
 				37B399FA24343795005240B5 /* RealTimeRequestModel.swift in Sources */,
 				3727781A242AE63800816C72 /* EarlyWaringController.swift in Sources */,
 				37B39A1A2437188C005240B5 /* TypeSelectView.swift in Sources */,
+				37AD9F59244ED0DB00261330 /* KJ128DataController.swift in Sources */,
 				37D428BB2415DFF400E6B330 /* SceneDelegate.swift in Sources */,
 				37D428BD2415DFF400E6B330 /* ContentView.swift in Sources */,
 				37277826242AE99A00816C72 /* TestPointController.swift in Sources */,
 				372777312420724A00816C72 /* PostDetailView.swift in Sources */,
+				37AD9F69244EE02800261330 /* KJ128RealTimeStationStateVC.swift in Sources */,
 				372777ED24284B0A00816C72 /* TypeButtonView.swift in Sources */,
 				376FF1262419C86B00F0DAFA /* PostCell.swift in Sources */,
 				3727787F2433090700816C72 /* SelectBox.swift in Sources */,
+				37AD9F74244EE3B900261330 /* KJ128RealTimePeopleModel.swift in Sources */,
 				376FF1D72419CC1B00F0DAFA /* UIBarButtonItem-Extension.swift in Sources */,
 				37B39A0524346563005240B5 /* RealTimeTestPointCell.swift in Sources */,
 				372CF5A0243B1A0800CBE399 /* EarlyWaringModel.swift in Sources */,
@@ -1573,7 +1693,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shine.shineApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shine.zhks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1596,7 +1716,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shine.shineApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shine.zhks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
