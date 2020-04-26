@@ -22,6 +22,8 @@ class TypeButtonView: UIView {
           contentView = (Bundle.main.loadNibNamed("TypeButtonView", owner: self, options: nil)?.last as! UIView)
           // 设置frame
           contentView.frame = frame
+        contentView.clipsToBounds = true
+        contentView.layer.cornerRadius = CGFloat(clickRadius)
           // 添加上去
           addSubview(contentView)
       }

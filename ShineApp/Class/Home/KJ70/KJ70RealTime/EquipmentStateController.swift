@@ -14,7 +14,7 @@ private var mModelList : [RealTimeEquipmentModel] = [RealTimeEquipmentModel]()
 private var countLabel : UILabel = UILabel()
 class EquipmentStateController: UIViewController {
     private lazy var myViewModel : RealTimeRequestModel = RealTimeRequestModel()
-    
+    private var noDataView : ListStateView = ListStateView()
     fileprivate lazy var tableView : UITableView  = {
         let tableview = UITableView(frame: CGRect(x: 0, y: HEAD_VIEW_HEIGHT, width: Int(mScreenW), height: Int(mScreenH) - HEAD_VIEW_HEIGHT - cvTopNavHeight - Int(navigationBarHeight)))
         tableview.delegate = self
@@ -44,8 +44,11 @@ class EquipmentStateController: UIViewController {
         countLabel.textColor = UIColor.white
         countLabel.textAlignment = .left
         headView.addSubview(countLabel)
-        
-        self.view.addSubview(tableView)
+         self.view.addSubview(tableView)
+        noDataView.frame = CGRect(x: 0, y: HEAD_VIEW_HEIGHT, width: Int(mScreenW), height: Int(mScreenH) - HEAD_VIEW_HEIGHT - cvTopNavHeight - Int(navigationBarHeight))
+        noDataView.isHidden = true
+        self.view.addSubview(noDataView)
+       
       setRefresh()
     }
     
@@ -72,7 +75,10 @@ class EquipmentStateController: UIViewController {
             mModelList.removeAll()
             if self.myViewModel.equipmentCount > 0 {
                 mModelList = self.myViewModel.realTimeEquipmentModels
-            }
+            self.noDataView.isHidden = true
+                                }else{
+                self.noDataView.isHidden = false
+                              }
             self.tableView.mj_header.endRefreshing()
             self.tableView.reloadData()
         }

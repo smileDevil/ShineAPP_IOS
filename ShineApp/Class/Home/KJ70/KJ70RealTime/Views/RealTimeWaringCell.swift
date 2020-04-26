@@ -22,6 +22,7 @@ class RealTimeWaringCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         bgView.clipsToBounds = true
+        bgView.backgroundColor = cellBgColor
         bgView.layer.cornerRadius = CGFloat(clickRadius)
         self.selectionStyle = .none
     }

@@ -23,6 +23,7 @@ class HistoryWaringCell: UITableViewCell {
         super.awakeFromNib()
         bgView.clipsToBounds = true
         bgView.layer.cornerRadius = CGFloat(clickRadius)
+        bgView.backgroundColor = cellBgColor
         self.selectionStyle = .none
     }
 

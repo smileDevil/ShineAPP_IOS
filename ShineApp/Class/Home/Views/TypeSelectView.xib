@@ -43,7 +43,7 @@
                             <rect key="frame" x="1" y="1" width="202" height="26"/>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.1647058824" green="0.20784313730000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.1450980392" green="0.1764705882" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="9Y0-3n-Zbn" firstAttribute="top" secondItem="c8Z-de-4kW" secondAttribute="top" constant="1" id="3Db-p8-jLf"/>
                         <constraint firstAttribute="bottom" secondItem="9Y0-3n-Zbn" secondAttribute="bottom" constant="1" id="Gdj-uc-NiD"/>

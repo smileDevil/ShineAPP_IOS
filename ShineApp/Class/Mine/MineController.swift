@@ -12,14 +12,9 @@ class MineController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-            self.view.backgroundColor = mainColor
+           self.view.backgroundColor = mainColor
             self.navigationItem.title = "个人中心"
-            let alertLabel = UILabel()
-            alertLabel.text = "功能暂待后期开发"
-            alertLabel.frame = CGRect(x: 0, y: self.view.frame.height * 0.5 - 10, width: mScreenW, height: 20)
-            alertLabel.textColor = UIColor.white
-            alertLabel.textAlignment = .center
-            self.view.addSubview(alertLabel)
+            
     }
 
 

@@ -12,8 +12,9 @@ private let HEAD_VIEW_HEIGHT = 40
 private let CellStr : String = "RealTimeTestPointCell"
 private var mModelList : [RealTimeTestPointModel] = [RealTimeTestPointModel]()
 private var countLabel : UILabel = UILabel()
+
 class TestPointController: UIViewController {
-    
+    private var noDataView : ListStateView = ListStateView()
     private lazy var myViewModel : RealTimeRequestModel = RealTimeRequestModel()
       fileprivate lazy var tableView : UITableView  = {
              let tableview = UITableView(frame: CGRect(x: 0, y: HEAD_VIEW_HEIGHT, width: Int(mScreenW), height: Int(mScreenH) - HEAD_VIEW_HEIGHT - cvTopNavHeight - Int(navigationBarHeight)))
@@ -45,6 +46,10 @@ class TestPointController: UIViewController {
      headView.addSubview(countLabel)
      
      self.view.addSubview(tableView)
+        
+    noDataView.frame = CGRect(x: 0, y: HEAD_VIEW_HEIGHT, width: Int(mScreenW), height: Int(mScreenH) - HEAD_VIEW_HEIGHT - cvTopNavHeight - Int(navigationBarHeight))
+                      noDataView.isHidden = true
+                      self.view.addSubview(noDataView)
      setRefresh()
     }
     
@@ -70,7 +75,10 @@ class TestPointController: UIViewController {
               mModelList.removeAll()
                          if self.myViewModel.testPointCount > 0 {
                              mModelList = self.myViewModel.realTimeTestPointModels
-                         }
+                            self.noDataView.isHidden = true
+                         }else{
+                          self.noDataView.isHidden = false
+                }
                  self.tableView.mj_header.endRefreshing()
                          self.tableView.reloadData()
             }

@@ -21,6 +21,7 @@ class KJ128RealTimePeopleCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         bgView.clipsToBounds = true
+        bgView.backgroundColor = cellBgColor
         bgView.layer.cornerRadius = CGFloat(clickRadius)
         self.selectionStyle = .none
         // Initialization code

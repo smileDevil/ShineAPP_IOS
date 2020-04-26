@@ -47,15 +47,16 @@ let iphoneXbottomHight : CGFloat = 34
 // ka70datacontroll 中的顶部导航高度
 let cvTopNavHeight = 40
 
-let jCycleViewH = isIphoneX ? 200:160
+let jCycleViewH = isIphoneX ? 200:180
 let jCycleViewMarginTop = isIphoneX ? 40:20
 let jCycleViewMargin = isIphoneX ? 30:30
 let jCycleTopMargin = isIphoneX ? 45:30;
 let typeViewMarginCycleView = isIphoneX ? 45:30
 
 //颜色
-let mainColor = UIColor.init(r: 26, g: 42, b: 54)
-let cellBgColor = UIColor.init(r: 42, g: 53, b: 78)
+let mainColor = UIColor.init(r: 26, g: 32, b: 64)
+//let cellBgColor = UIColor.init(r: 42, g: 53, b: 78)
+let cellBgColor = UIColor.init(r: 37, g: 45, b: 83)
 let tabBarBgColor = cellBgColor
 let tabBarItemSelectdColor = UIColor.init(r: 7, g: 193, b: 96) //绿色选中色
 let tabbarItemNormalColor = UIColor.init(r: 113, g: 138, b: 148)

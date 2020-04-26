@@ -8,6 +8,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ShineApp" customModuleProvider="target">
             <connections>
+                <outlet property="loadBackView" destination="lPk-SW-Lge" id="xnc-cv-e8p"/>
+                <outlet property="loadImageView" destination="nLa-37-biz" id="A5h-Kk-iI8"/>
                 <outlet property="loginBtn" destination="8fV-xj-ovA" id="NsX-QH-wN3"/>
                 <outlet property="psdBackView" destination="ODE-CJ-f02" id="L2v-ey-LYp"/>
                 <outlet property="psdTextFiled" destination="nJC-8H-wBJ" id="eKg-iQ-yFd"/>
@@ -187,12 +189,30 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPk-SW-Lge">
+                    <rect key="frame" x="1" y="1" width="412" height="894"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="nLa-37-biz">
+                            <rect key="frame" x="186" y="427" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Si6-2M-f17"/>
+                                <constraint firstAttribute="width" constant="40" id="bHz-6r-RIf"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="nLa-37-biz" firstAttribute="centerX" secondItem="lPk-SW-Lge" secondAttribute="centerX" id="Pgk-LM-MXW"/>
+                        <constraint firstItem="nLa-37-biz" firstAttribute="centerY" secondItem="lPk-SW-Lge" secondAttribute="centerY" id="fXR-wy-SJ7"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.10196078431372549" green="0.16470588235294117" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ODE-CJ-f02" firstAttribute="trailing" secondItem="pqi-mQ-WZa" secondAttribute="trailing" id="63L-V6-ieC"/>
                 <constraint firstItem="pqi-mQ-WZa" firstAttribute="top" secondItem="eFf-eh-j0M" secondAttribute="bottom" constant="30" id="7Kv-ZP-ELJ"/>
                 <constraint firstItem="WST-Tj-Ozh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8U5-eW-9AF"/>
+                <constraint firstAttribute="bottom" secondItem="lPk-SW-Lge" secondAttribute="bottom" constant="1" id="9BB-RH-cVY"/>
                 <constraint firstItem="MHu-1b-BGy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BJv-1a-nkc"/>
                 <constraint firstAttribute="trailing" secondItem="pqi-mQ-WZa" secondAttribute="trailing" constant="30" id="F9a-rF-Ugx"/>
                 <constraint firstItem="WST-Tj-Ozh" firstAttribute="top" secondItem="MJa-vk-vjf" secondAttribute="bottom" constant="5" id="HTi-bY-xRc"/>
@@ -200,15 +220,18 @@
                 <constraint firstItem="xEX-1t-KgM" firstAttribute="top" secondItem="WST-Tj-Ozh" secondAttribute="bottom" id="Lro-7v-v9M"/>
                 <constraint firstItem="8fV-xj-ovA" firstAttribute="leading" secondItem="ODE-CJ-f02" secondAttribute="leading" id="Rqg-sq-n2B"/>
                 <constraint firstItem="MJa-vk-vjf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TPq-pN-9V5"/>
+                <constraint firstItem="lPk-SW-Lge" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="XJC-yn-vgS"/>
                 <constraint firstItem="tJw-Zd-Pot" firstAttribute="leading" secondItem="8fV-xj-ovA" secondAttribute="leading" id="a2c-6p-eSA"/>
                 <constraint firstItem="eFf-eh-j0M" firstAttribute="top" secondItem="MHu-1b-BGy" secondAttribute="bottom" id="dfA-HS-fN1"/>
                 <constraint firstItem="tJw-Zd-Pot" firstAttribute="trailing" secondItem="8fV-xj-ovA" secondAttribute="trailing" id="fHP-mX-iPC"/>
                 <constraint firstItem="8fV-xj-ovA" firstAttribute="trailing" secondItem="ODE-CJ-f02" secondAttribute="trailing" id="gOA-Dv-GfT"/>
                 <constraint firstItem="ODE-CJ-f02" firstAttribute="top" secondItem="pqi-mQ-WZa" secondAttribute="bottom" constant="30" id="jpw-wJ-0Rh"/>
                 <constraint firstItem="MJa-vk-vjf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="150" id="jrJ-mt-u1d"/>
+                <constraint firstAttribute="trailing" secondItem="lPk-SW-Lge" secondAttribute="trailing" constant="1" id="mdq-IH-lPa"/>
                 <constraint firstItem="8fV-xj-ovA" firstAttribute="top" secondItem="ODE-CJ-f02" secondAttribute="bottom" constant="60" id="qiQ-Sa-gcD"/>
                 <constraint firstItem="MHu-1b-BGy" firstAttribute="top" secondItem="xEX-1t-KgM" secondAttribute="bottom" id="tct-2C-prP"/>
                 <constraint firstItem="xEX-1t-KgM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wgV-Hm-iW6"/>
+                <constraint firstItem="lPk-SW-Lge" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="xXw-tf-ps3"/>
                 <constraint firstItem="ODE-CJ-f02" firstAttribute="leading" secondItem="pqi-mQ-WZa" secondAttribute="leading" id="yF5-em-uWn"/>
                 <constraint firstItem="tJw-Zd-Pot" firstAttribute="top" secondItem="8fV-xj-ovA" secondAttribute="bottom" constant="20" id="yYT-1e-DUW"/>
                 <constraint firstItem="eFf-eh-j0M" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zdL-mg-a7v"/>
@@ -218,6 +241,7 @@
     </objects>
     <resources>
         <image name="QQ.png" width="60" height="60"/>
+        <image name="loading.png" width="128" height="128"/>
         <image name="loginLog.png" width="186" height="186"/>
         <image name="mine_blue.png" width="22" height="22"/>
         <image name="password.png" width="30" height="30"/>
