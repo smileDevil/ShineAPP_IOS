@@ -55,7 +55,7 @@
                             <rect key="frame" x="1" y="1" width="252" height="38"/>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.1647058824" green="0.20784313730000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.1450980392" green="0.1764705882" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="N04-Au-ABM" firstAttribute="centerY" secondItem="2Bk-Ku-jXA" secondAttribute="centerY" id="1RX-vE-fCN"/>
                         <constraint firstItem="BDT-jh-ap1" firstAttribute="leading" secondItem="2Bk-Ku-jXA" secondAttribute="leading" constant="1" id="4z0-sA-hC0"/>
@@ -83,7 +83,7 @@
                             <rect key="frame" x="1" y="1" width="252" height="38"/>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.1647058824" green="0.20784313730000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.1450980392" green="0.1764705882" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="Gpm-kb-UUN" secondAttribute="bottom" constant="1" id="CGu-4A-NV2"/>
                         <constraint firstItem="779-dn-iU7" firstAttribute="centerY" secondItem="w8A-hX-KPM" secondAttribute="centerY" id="ObR-tm-MEV"/>

@@ -18,6 +18,10 @@ class Kj128RealTimeViewModel: NSObject {
     // 分站状态信息
        var realTimeStationStateModels : [KJ128StationInfoModel] = [KJ128StationInfoModel]()
        var stationCount : NSInteger = 0
+    
+    // 警报信息
+          var realTimeWaringModels : [KJ128RealTimeWaringModel] = [KJ128RealTimeWaringModel]()
+          var waringCount : NSInteger = 0
 }
 extension Kj128RealTimeViewModel{
     //实时设备故障
@@ -104,4 +108,35 @@ extension Kj128RealTimeViewModel{
           }
           
       }
+    
+    
+    //获取报警信息
+    func request128Waring(url:String, finishedCallBack:@escaping () -> ()){
+            let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
+            let requestUrl = REQUESTURL + url
+        let parameters = ["Minecode" : mineCode,"JobCardCode":"","Name":""]
+            NetworkTools.requestData(type: .GET, url: requestUrl,paramenters: parameters) { (result) in
+                guard let resultDic = result as? [String : NSObject] else {
+                    return
+                }
+                guard let resultCount = resultDic["total"] as? NSInteger else {
+                    return
+                }
+                guard let resultArr = resultDic["rows"] as? [[String : NSObject]] else {
+                    return
+                }
+                self.realTimeWaringModels.removeAll()
+                if resultCount != 0 {
+                    self.waringCount = resultCount
+                    
+                    for dic in resultArr {
+                        let model : KJ128RealTimeWaringModel = KJ128RealTimeWaringModel(dict: dic)
+                        self.realTimeWaringModels.append(model)
+                    }
+                }
+                finishedCallBack()
+                
+            }
+            
+        }
 }

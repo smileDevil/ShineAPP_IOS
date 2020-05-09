@@ -307,6 +307,17 @@
 		37D428BD2415DFF400E6B330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D428BC2415DFF400E6B330 /* ContentView.swift */; };
 		37D428BF2415DFF500E6B330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D428BE2415DFF500E6B330 /* Assets.xcassets */; };
 		37D428C22415DFF500E6B330 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D428C12415DFF500E6B330 /* Preview Assets.xcassets */; };
+		37E0FB992463977C009D7CDA /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E0FB972463977C009D7CDA /* RegisterVC.swift */; };
+		37E0FB9A2463977C009D7CDA /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E0FB982463977C009D7CDA /* RegisterVC.xib */; };
+		37E0FB9D2463D368009D7CDA /* RegisterAgreementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E0FB9B2463D368009D7CDA /* RegisterAgreementVC.swift */; };
+		37E0FB9E2463D368009D7CDA /* RegisterAgreementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E0FB9C2463D368009D7CDA /* RegisterAgreementVC.xib */; };
+		37F2005E245668F2004BF3CA /* KJ128RealTimeWaringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2005C245668F2004BF3CA /* KJ128RealTimeWaringCell.swift */; };
+		37F2005F245668F2004BF3CA /* KJ128RealTimeWaringCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F2005D245668F2004BF3CA /* KJ128RealTimeWaringCell.xib */; };
+		37F2006124567BB0004BF3CA /* KJ128RealTimeWaringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2006024567BB0004BF3CA /* KJ128RealTimeWaringModel.swift */; };
+		37F2006724596749004BF3CA /* KJ128HistorySearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2006524596749004BF3CA /* KJ128HistorySearchVC.swift */; };
+		37F2006824596749004BF3CA /* KJ128HistorySearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F2006624596749004BF3CA /* KJ128HistorySearchVC.xib */; };
+		37F2006A2459688F004BF3CA /* KJ128HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F200692459688F004BF3CA /* KJ128HistoryViewModel.swift */; };
+		37F2006C2459691C004BF3CA /* PersonNameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2006B2459691C004BF3CA /* PersonNameModel.swift */; };
 		6CCF1A84FCEE0CD551F85553 /* Pods_ShineApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7DDAA1E3558AEDB456A121 /* Pods_ShineApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -606,13 +617,24 @@
 		37B39A20243B0E33005240B5 /* shaixuan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shaixuan@2x.png"; sourceTree = "<group>"; };
 		37B39A21243B0E33005240B5 /* shaixuan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shaixuan@3x.png"; sourceTree = "<group>"; };
 		37B39A25243B112C005240B5 /* welcomx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcomx.jpg; sourceTree = "<group>"; };
-		37D428B52415DFF400E6B330 /* ShineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37D428B52415DFF400E6B330 /* 智慧矿山助手.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "智慧矿山助手.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D428B82415DFF400E6B330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D428BA2415DFF400E6B330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		37D428BC2415DFF400E6B330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		37D428BE2415DFF500E6B330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37D428C12415DFF500E6B330 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37D428C62415DFF500E6B330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E0FB972463977C009D7CDA /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		37E0FB982463977C009D7CDA /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		37E0FB9B2463D368009D7CDA /* RegisterAgreementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAgreementVC.swift; sourceTree = "<group>"; };
+		37E0FB9C2463D368009D7CDA /* RegisterAgreementVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterAgreementVC.xib; sourceTree = "<group>"; };
+		37F2005C245668F2004BF3CA /* KJ128RealTimeWaringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimeWaringCell.swift; sourceTree = "<group>"; };
+		37F2005D245668F2004BF3CA /* KJ128RealTimeWaringCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128RealTimeWaringCell.xib; sourceTree = "<group>"; };
+		37F2006024567BB0004BF3CA /* KJ128RealTimeWaringModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimeWaringModel.swift; sourceTree = "<group>"; };
+		37F2006524596749004BF3CA /* KJ128HistorySearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128HistorySearchVC.swift; sourceTree = "<group>"; };
+		37F2006624596749004BF3CA /* KJ128HistorySearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128HistorySearchVC.xib; sourceTree = "<group>"; };
+		37F200692459688F004BF3CA /* KJ128HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128HistoryViewModel.swift; sourceTree = "<group>"; };
+		37F2006B2459691C004BF3CA /* PersonNameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonNameModel.swift; sourceTree = "<group>"; };
 		39940F223CE485F5EEE43D45 /* Pods-ShineApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShineApp.debug.xcconfig"; path = "Target Support Files/Pods-ShineApp/Pods-ShineApp.debug.xcconfig"; sourceTree = "<group>"; };
 		90623918472C511178D5CEFE /* Pods-ShineApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShineApp.release.xcconfig"; path = "Target Support Files/Pods-ShineApp/Pods-ShineApp.release.xcconfig"; sourceTree = "<group>"; };
 		9D7DDAA1E3558AEDB456A121 /* Pods_ShineApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShineApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -637,6 +659,10 @@
 				372777632424887500816C72 /* LoginViewController.xib */,
 				37277841242D9E6B00816C72 /* LoginViewModel.swift */,
 				37277873243183F100816C72 /* MineModel.swift */,
+				37E0FB972463977C009D7CDA /* RegisterVC.swift */,
+				37E0FB982463977C009D7CDA /* RegisterVC.xib */,
+				37E0FB9B2463D368009D7CDA /* RegisterAgreementVC.swift */,
+				37E0FB9C2463D368009D7CDA /* RegisterAgreementVC.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1128,6 +1154,11 @@
 		37AD9F51244ECC4400261330 /* KJ128History */ = {
 			isa = PBXGroup;
 			children = (
+				37F2006524596749004BF3CA /* KJ128HistorySearchVC.swift */,
+				37F2006624596749004BF3CA /* KJ128HistorySearchVC.xib */,
+				37F200642456C248004BF3CA /* View */,
+				37F200632456C240004BF3CA /* Model */,
+				37F200622456C236004BF3CA /* ViewModel */,
 			);
 			path = KJ128History;
 			sourceTree = "<group>";
@@ -1139,6 +1170,8 @@
 				37AD9F76244EE97500261330 /* KJ128RealTimePeopleCell.xib */,
 				37906B33245279C90002C37A /* KJ128BaseCell.swift */,
 				37906B34245279C90002C37A /* KJ128BaseCell.xib */,
+				37F2005C245668F2004BF3CA /* KJ128RealTimeWaringCell.swift */,
+				37F2005D245668F2004BF3CA /* KJ128RealTimeWaringCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1149,6 +1182,7 @@
 				37AD9F73244EE3B900261330 /* KJ128RealTimePeopleModel.swift */,
 				37906B2F24526F8B0002C37A /* KJ128RealTimeAreaInfoModel.swift */,
 				37906B31245272BA0002C37A /* KJ128StationInfoModel.swift */,
+				37F2006024567BB0004BF3CA /* KJ128RealTimeWaringModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1214,7 +1248,7 @@
 		37D428B62415DFF400E6B330 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37D428B52415DFF400E6B330 /* ShineApp.app */,
+				37D428B52415DFF400E6B330 /* 智慧矿山助手.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1242,6 +1276,29 @@
 				37D428C12415DFF500E6B330 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37F200622456C236004BF3CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				37F200692459688F004BF3CA /* KJ128HistoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		37F200632456C240004BF3CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37F2006B2459691C004BF3CA /* PersonNameModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37F200642456C248004BF3CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		54F3C17C79840D5B83A2A316 /* Frameworks */ = {
@@ -1280,7 +1337,7 @@
 			);
 			name = ShineApp;
 			productName = ShineApp;
-			productReference = 37D428B52415DFF400E6B330 /* ShineApp.app */;
+			productReference = 37D428B52415DFF400E6B330 /* 智慧矿山助手.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1412,6 +1469,7 @@
 				37B39A26243B112C005240B5 /* welcomx.jpg in Resources */,
 				372777822424AC3B00816C72 /* mine_logo.png in Resources */,
 				376FF19F2419CA0F00F0DAFA /* 700a34f6gy1gaunsxgzixj20j60edmz8.jpg in Resources */,
+				37E0FB9E2463D368009D7CDA /* RegisterAgreementVC.xib in Resources */,
 				3727786A24317DB800816C72 /* mine_blue_selected@3x.png in Resources */,
 				376FF1BB2419CA1000F0DAFA /* 006gWxMEly1gavap86qr9j30ht0qo40t.jpg in Resources */,
 				376FF1972419CA0F00F0DAFA /* 4e7f0c83gy1gam2ml6nucj22tc240kjl.jpg in Resources */,
@@ -1448,6 +1506,7 @@
 				37277827242AE99A00816C72 /* TestPointController.xib in Resources */,
 				376594882452BF4D005C537B /* people_main@2x.png in Resources */,
 				376FF1CA2419CA1000F0DAFA /* 4e7f0c83ly8g1ho507078j20ro0rojtq.jpg in Resources */,
+				37F2006824596749004BF3CA /* KJ128HistorySearchVC.xib in Resources */,
 				376FF1B12419CA1000F0DAFA /* bca7fdafly1gax1gqd9vmj20c80ayaam.jpg in Resources */,
 				376594972452BF4E005C537B /* ky_main_selected@2x.png in Resources */,
 				372777C32425EA9B00816C72 /* ky_main_selected.png in Resources */,
@@ -1461,6 +1520,7 @@
 				376FF1A82419CA1000F0DAFA /* 700a34f6ly8g9a29rjt92j20fn0iqdg8.jpg in Resources */,
 				37AD9F5E244EDFCE00261330 /* KJ128RealTimePoepleVC.xib in Resources */,
 				37B39A17243703BB005240B5 /* search@3x.png in Resources */,
+				37E0FB9A2463977C009D7CDA /* RegisterVC.xib in Resources */,
 				372777832424AC3B00816C72 /* xinlang.png in Resources */,
 				376FF1952419CA0F00F0DAFA /* 6ec3b446gy1gavd51jc4lj20j60pmwhl.jpg in Resources */,
 				37B39A0224346304005240B5 /* RealTimeEquipmentCell.xib in Resources */,
@@ -1524,6 +1584,7 @@
 				376FF1A42419CA1000F0DAFA /* c5aa834fgy1gauzr86bp5j20pb0w47in.jpg in Resources */,
 				37AD9F6E244EE05400261330 /* KJ128RealTimeAreaVC.xib in Resources */,
 				3727786C24317DB800816C72 /* system_blue@2x.png in Resources */,
+				37F2005F245668F2004BF3CA /* KJ128RealTimeWaringCell.xib in Resources */,
 				376594922452BF4E005C537B /* video_main_selected@3x.png in Resources */,
 				372777EA2426073B00816C72 /* banner_main.png in Resources */,
 				3727786424317DB800816C72 /* system_blue_selected@3x.png in Resources */,
@@ -1584,6 +1645,7 @@
 			files = (
 				376FF1D82419CC1B00F0DAFA /* NSDate-Extension.swift in Sources */,
 				372777D02425EE2600816C72 /* CycleModel.swift in Sources */,
+				37E0FB9D2463D368009D7CDA /* RegisterAgreementVC.swift in Sources */,
 				376FF1D52419CC1B00F0DAFA /* NetworkTools.swift in Sources */,
 				37B39A0C2435907B005240B5 /* RealTimeOpenOutModel.swift in Sources */,
 				372778132429F77200816C72 /* TJContentView.swift in Sources */,
@@ -1621,8 +1683,11 @@
 				3727787624318BA500816C72 /* AlertHepler.swift in Sources */,
 				37277840242D8A0800816C72 /* RealTimeWaringViewModel.swift in Sources */,
 				372777B12425DBAE00816C72 /* OnePageController.swift in Sources */,
+				37F2006124567BB0004BF3CA /* KJ128RealTimeWaringModel.swift in Sources */,
+				37E0FB992463977C009D7CDA /* RegisterVC.swift in Sources */,
 				3727772D241C691A00816C72 /* PostListView.swift in Sources */,
 				372777F82428AD2500816C72 /* NavTitleView.swift in Sources */,
+				37F2006724596749004BF3CA /* KJ128HistorySearchVC.swift in Sources */,
 				376FF1DC2419D9BD00F0DAFA /* VipBadge.swift in Sources */,
 				372778152429F77200816C72 /* TJPageCollectionView.swift in Sources */,
 				372CF5BC243EF7D500CBE399 /* HistoryWaringCell.swift in Sources */,
@@ -1652,6 +1717,7 @@
 				372CF5A9243C180E00CBE399 /* KJ70HistorySearchController.swift in Sources */,
 				372777F42428A3A300816C72 /* KJ70DataController.swift in Sources */,
 				37AD9F77244EE97500261330 /* KJ128RealTimePeopleCell.swift in Sources */,
+				37F2006A2459688F004BF3CA /* KJ128HistoryViewModel.swift in Sources */,
 				37AD9F65244EE00100261330 /* KJ128RealTimeWaringVC.swift in Sources */,
 				3727787D2433014D00816C72 /* SelectView.swift in Sources */,
 				37B399F824343628005240B5 /* RealTimeEquipmentModel.swift in Sources */,
@@ -1661,12 +1727,14 @@
 				37906B32245272BA0002C37A /* KJ128StationInfoModel.swift in Sources */,
 				37B39A1A2437188C005240B5 /* TypeSelectView.swift in Sources */,
 				37AD9F59244ED0DB00261330 /* KJ128DataController.swift in Sources */,
+				37F2005E245668F2004BF3CA /* KJ128RealTimeWaringCell.swift in Sources */,
 				37D428BB2415DFF400E6B330 /* SceneDelegate.swift in Sources */,
 				37D428BD2415DFF400E6B330 /* ContentView.swift in Sources */,
 				37277826242AE99A00816C72 /* TestPointController.swift in Sources */,
 				372777312420724A00816C72 /* PostDetailView.swift in Sources */,
 				37AD9F69244EE02800261330 /* KJ128RealTimeStationStateVC.swift in Sources */,
 				372777ED24284B0A00816C72 /* TypeButtonView.swift in Sources */,
+				37F2006C2459691C004BF3CA /* PersonNameModel.swift in Sources */,
 				376FF1262419C86B00F0DAFA /* PostCell.swift in Sources */,
 				3727787F2433090700816C72 /* SelectBox.swift in Sources */,
 				37AD9F74244EE3B900261330 /* KJ128RealTimePeopleModel.swift in Sources */,
@@ -1799,7 +1867,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"ShineApp/Preview Content\"";
 				DEVELOPMENT_TEAM = N38TCR32L7;
 				ENABLE_BITCODE = NO;
@@ -1810,7 +1880,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shine.zhks;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "智慧矿山助手";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1822,7 +1893,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"ShineApp/Preview Content\"";
 				DEVELOPMENT_TEAM = N38TCR32L7;
 				ENABLE_BITCODE = NO;
@@ -1833,7 +1906,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shine.zhks;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "智慧矿山助手";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

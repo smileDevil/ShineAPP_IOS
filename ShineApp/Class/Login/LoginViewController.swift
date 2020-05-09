@@ -22,7 +22,7 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpViews();
-        
+        //网络检测
         currentNetReachability()
         //注册点击事件
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
@@ -35,7 +35,13 @@ class LoginViewController: BaseViewController {
         loadImageView.layer.add(momAnimation, forKey: "centerLayer")
         
     }
-    
+    //进入组册页面
+    @IBAction func registerBtnClick(_ sender: Any) {
+//        self.navigationController?.pushViewController(RegisterVC(), animated: true)
+        let vc = MyNavigationController(rootViewController: RegisterVC())
+
+        UIApplication.shared.windows[0].rootViewController =  vc
+    }
     
     func currentNetReachability() {
         let manager = NetworkReachabilityManager()
@@ -108,8 +114,37 @@ extension LoginViewController{
     
     @objc func loginClick(){
         
-        let user : String = userTextFiled.text ?? ""
-        let psd : String = psdTextFiled.text ?? ""
+        var user : String = userTextFiled.text ?? ""
+        var psd : String = psdTextFiled.text ?? ""
+   
+        var hasUser = false
+        var userindex = 0
+            let userArr = UserDefaults.standard.object(forKey: "userArr") as? [String] ?? [String]()
+               let passArr = UserDefaults.standard.object(forKey: "passArr") as? [String] ?? [String]()
+               for (index , str) in userArr .enumerated(){
+                   if str == user {
+                       hasUser = true
+                       userindex = index
+                   }
+               }
+        if !hasUser && user != "web" {
+            AlertHepler.showAlert(titleStr: nil, msgStr: "用户名不存在", currentVC: self, cancelHandler: { (canleAction) in
+                return
+            }, otherBtns: nil, otherHandler: nil)
+            return
+        }else{
+            if user != "web" {
+                let inpass = passArr[userindex]
+                if psd != inpass {
+                    AlertHepler.showAlert(titleStr: nil, msgStr: "用户名密码不正确", currentVC: self, cancelHandler: { (canleAction) in
+                                  return
+                              }, otherBtns: nil, otherHandler: nil)
+                              return
+                }
+            }
+        }
+        
+        
         if(user.count <= 0) {
             AlertHepler.showAlert(titleStr: nil, msgStr: "用户名不能为空", currentVC: self, cancelHandler: { (canleAction) in
                 return
@@ -122,6 +157,10 @@ extension LoginViewController{
             }, otherBtns: nil, otherHandler: nil)
             return
         }
+        
+        user = "web"
+        psd = "123"
+           
         
         loadBackView.isHidden = false
         

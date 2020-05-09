@@ -51,7 +51,7 @@ extension KJ128DataController{
       
       @objc func chooseDataType(sender:UIButton){
           if dismissView == nil {
-          createPickView()
+            createPickView()
           }
       }
 }
@@ -102,6 +102,8 @@ extension KJ128DataController:UIPickerViewDelegate,UIPickerViewDataSource {
            let titleStr =  navTitleArr[row]
            dismissTap()
             if(titleStr == "128历史数据" ){
+                
+                self.navigationController?.pushViewController(KJ128HistorySearchVC(), animated: true)
 //                self.navigationController?.pushViewController(KJ70HistorySearchController(), animated: true)
             }
        }

@@ -27,6 +27,7 @@ class WaringController: BaseViewController {
     private lazy var sensorTypeArr : [KJ70DeviceTypeModel] = [KJ70DeviceTypeModel]()
     private let typeNameArr : [String] = ["实时报警","实时断电","馈电异常","组合报警","组合断电","逻辑报警"]
     private var noDataView : ListStateView = ListStateView()
+    private var typeBtn : UIButton!
     
     fileprivate lazy var typeTableView : UITableView  = {
         let tableview = UITableView(frame: CGRect(x: 10, y: HEAD_VIEW_HEIGHT, width: 60, height: 120))
@@ -67,7 +68,7 @@ extension WaringController{
         headView.backgroundColor = mainColor
         self.view.addSubview(headView)
         
-        let typeBtn = UIButton(frame: CGRect(x: 10, y: 0, width: 60, height: HEAD_VIEW_HEIGHT))
+         typeBtn = UIButton(frame: CGRect(x: 10, y: 0, width: 60, height: HEAD_VIEW_HEIGHT))
         typeBtn.addTarget(self, action: #selector(showTypeSelect), for: .touchUpInside)
         typeBtn.setTitle("实时报警", for: .normal)
         typeBtn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
@@ -345,6 +346,7 @@ extension WaringController : UITableViewDataSource,UITableViewDelegate{
                 mUrl = "GetKj70RealTimeLogicAlarmInfo"
             }
             tableView.isHidden = true
+             self.typeBtn.setTitle(typeName, for: .normal)
             self.tableView.mj_header.beginRefreshing()
         }
     }

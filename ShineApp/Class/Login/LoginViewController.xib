@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ShineApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="智慧矿山助手" customModuleProvider="target">
             <connections>
                 <outlet property="loadBackView" destination="lPk-SW-Lge" id="xnc-cv-e8p"/>
                 <outlet property="loadImageView" destination="nLa-37-biz" id="A5h-Kk-iI8"/>
@@ -133,6 +133,20 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37k-WO-bOK">
+                    <rect key="frame" x="337" y="482" width="45" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="KMB-R0-D46"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="MhD-Q8-19h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="用户注册">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="registerBtnClick:" destination="-1" eventType="touchUpInside" id="hzu-cu-9AR"/>
+                    </connections>
+                </button>
                 <view hidden="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJw-Zd-Pot">
                     <rect key="frame" x="30" y="592" width="354" height="20"/>
                     <subviews>
@@ -214,6 +228,7 @@
                 <constraint firstItem="WST-Tj-Ozh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8U5-eW-9AF"/>
                 <constraint firstAttribute="bottom" secondItem="lPk-SW-Lge" secondAttribute="bottom" constant="1" id="9BB-RH-cVY"/>
                 <constraint firstItem="MHu-1b-BGy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BJv-1a-nkc"/>
+                <constraint firstItem="37k-WO-bOK" firstAttribute="top" secondItem="ODE-CJ-f02" secondAttribute="bottom" constant="10" id="D2a-zj-ssX"/>
                 <constraint firstAttribute="trailing" secondItem="pqi-mQ-WZa" secondAttribute="trailing" constant="30" id="F9a-rF-Ugx"/>
                 <constraint firstItem="WST-Tj-Ozh" firstAttribute="top" secondItem="MJa-vk-vjf" secondAttribute="bottom" constant="5" id="HTi-bY-xRc"/>
                 <constraint firstItem="pqi-mQ-WZa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="JPh-Xb-F8e"/>
@@ -221,6 +236,7 @@
                 <constraint firstItem="8fV-xj-ovA" firstAttribute="leading" secondItem="ODE-CJ-f02" secondAttribute="leading" id="Rqg-sq-n2B"/>
                 <constraint firstItem="MJa-vk-vjf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TPq-pN-9V5"/>
                 <constraint firstItem="lPk-SW-Lge" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="XJC-yn-vgS"/>
+                <constraint firstAttribute="trailing" secondItem="37k-WO-bOK" secondAttribute="trailing" constant="32" id="YaN-D4-0DS"/>
                 <constraint firstItem="tJw-Zd-Pot" firstAttribute="leading" secondItem="8fV-xj-ovA" secondAttribute="leading" id="a2c-6p-eSA"/>
                 <constraint firstItem="eFf-eh-j0M" firstAttribute="top" secondItem="MHu-1b-BGy" secondAttribute="bottom" id="dfA-HS-fN1"/>
                 <constraint firstItem="tJw-Zd-Pot" firstAttribute="trailing" secondItem="8fV-xj-ovA" secondAttribute="trailing" id="fHP-mX-iPC"/>
