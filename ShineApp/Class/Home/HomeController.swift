@@ -10,11 +10,11 @@ import UIKit
 
 private var mTypeBtnViews : UIView  = UIView()
 
-private let normalTypeImages : [String] = ["people_main","save_main","gb_main","ky_main","video_main","fs_main"]
+private let normalTypeImages : [String] = ["save_main","people_main","gb_main","ky_main","video_main","fs_main"]
 
-private let touchTypeImages : [String] = ["people_main_selected","save_main_selected","gb_main_selected","ky_main_selected","video_main_selected","fs_main_selected"]
+private let touchTypeImages : [String] = ["save_main_selected","people_main_selected","gb_main_selected","ky_main_selected","video_main_selected","fs_main_selected"]
 
-private let typeTitles : [String] = ["人员定位","安全监控","调度广播","矿压监控","瓦斯抽放","视频监控"]
+private let typeTitles : [String] = ["安全监控","人员定位","调度广播","爆炸感知","瓦斯抽放","视频监控"]
 
 class HomeController: BaseViewController {
     
@@ -27,7 +27,8 @@ class HomeController: BaseViewController {
     private lazy var myViewModel : RealTimeRequestModel = RealTimeRequestModel()
     //懒加载创建tableview
      fileprivate lazy var tableView : UITableView = {[weak self] in
-         let tableView = UITableView(frame:CGRect(x: 0, y: 0, width: mScreenW, height: mScreenH - tabBarHeight - navigationBarHeight))
+//         let tableView = UITableView(frame:CGRect(x: 0, y: 0, width: mScreenW, height: mScreenH - tabBarHeight - navigationBarHeight))
+        let tableView = UITableView(frame:CGRect(x: 0, y: 0, width: mScreenW, height: mScreenH  - navigationBarHeight))
          tableView.backgroundColor = mainColor
          tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
          return tableView;
@@ -54,6 +55,9 @@ extension HomeController{
         let mineName =  UserDefaults.standard.string(forKey: "mineName")
         navTitView.titleBtn?.setTitle(mineName, for: .normal)
         self.view.addSubview(tableView)
+        
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "分享", style: .done, target: self, action: #selector(shareAction))
+        
         let HeadView = UIView()
         HeadView.backgroundColor = mainColor
         HeadView.addSubview(cycleView)
@@ -61,6 +65,7 @@ extension HomeController{
         
         let typeBtnViews = UIView()
         mTypeBtnViews = typeBtnViews
+        
         let btnW  = 137
         let btnH = 85
         let rowMargin = (Int(mScreenW) - btnW * 2 ) / 3
@@ -70,7 +75,7 @@ extension HomeController{
             let row = i % 2
             let btnX = rowMargin + row * (btnW + rowMargin)
             let btnY = (btnH + secMargin)  * sec
-            
+
             let tybtnView = TypeButtonView()
             tybtnView.frame = CGRect(x: btnX, y: btnY, width: btnW, height: btnH)
             tybtnView.typeTitleLabel.text = typeTitles[i]
@@ -88,7 +93,11 @@ extension HomeController{
         HeadView.frame = CGRect(x: 0, y: 0, width: Int(mScreenW), height: jCycleViewH + jCycleTopMargin + typeViewMarginCycleView + Int(typeBtnViews.frame.size.height) )
         tableView.addSubview(HeadView)
     }
-    
+    //分享
+    @objc func shareAction (){
+        
+    }
+    //架子啊数据
     func loadData(){
         myViewModel.getMineList {
             self.mineArr.removeAll()
@@ -100,7 +109,7 @@ extension HomeController{
     //选择矿区
     @objc func chooseMine(sender:UIButton){
           if dismissView == nil {
-          createPickView()
+           createPickView()
           }
       }
     
@@ -118,12 +127,14 @@ extension HomeController{
     //点击进入详情
     @objc func touchUpInside(sender:UIButton){
        typeViewsAction(flag: 2,tag:sender.tag)
-        if(sender.tag == 1 ){
+        if(sender.tag == 0 ){
             self.navigationController?.pushViewController(KJ70DataController(), animated: true)
         }
-//        else if sender.tag == 0 {
-//            self.navigationController?.pushViewController(KJ128DataController(), animated: true)
-//        }
+        else if sender.tag == 1 {
+            self.navigationController?.pushViewController(KJ128DataController(), animated: true)
+        }else if sender.tag == 3 {
+            self.navigationController?.pushViewController(KuangyaController(), animated: true)
+        }
         else{
             AlertHepler.showAlert(titleStr: "提示", msgStr: "功能暂待后期开发", currentVC: self, cancelHandler: { (canleAction) in
                 return

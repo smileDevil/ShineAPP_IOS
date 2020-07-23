@@ -64,7 +64,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "90"
                   endingLineNumber = "90"
-                  offsetFromSymbolStart = "124">
+                  offsetFromSymbolStart = "122">
                </Location>
                <Location
                   uuid = "B4BA4CE8-F8F2-438A-A568-CFE689046F12 - 4209d9d7c8e7bf8a"
@@ -79,7 +79,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "90"
                   endingLineNumber = "90"
-                  offsetFromSymbolStart = "516">
+                  offsetFromSymbolStart = "518">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -240,8 +240,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "156"
             endingLineNumber = "156"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "7">
+            landmarkName = "Kj70HistoryListController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -334,9 +334,9 @@
             filePath = "ShineApp/Class/Home/HomeController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "getPickerViewValue()"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "createPickView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -350,9 +350,9 @@
             filePath = "ShineApp/Class/Home/HomeController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
-            landmarkName = "getPickerViewValue()"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "createPickView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -366,10 +366,10 @@
             filePath = "ShineApp/Class/Home/HomeController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
-            landmarkName = "HomeController"
-            landmarkType = "21">
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "createPickView()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -400,7 +400,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "70"
                   endingLineNumber = "70"
-                  offsetFromSymbolStart = "1300">
+                  offsetFromSymbolStart = "1581">
                </Location>
                <Location
                   uuid = "3E53F703-5631-4D0F-B7A3-188AC6C12910 - 1e7e8f45e66448eb"
@@ -415,7 +415,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "71"
                   endingLineNumber = "71"
-                  offsetFromSymbolStart = "280">
+                  offsetFromSymbolStart = "312">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -560,7 +560,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "48"
                   endingLineNumber = "48"
-                  offsetFromSymbolStart = "924">
+                  offsetFromSymbolStart = "1140">
                </Location>
                <Location
                   uuid = "2E467F28-A363-4BDB-8539-4C0A24F1B1FB - 5c90f067dfabf301"
@@ -575,7 +575,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "48"
                   endingLineNumber = "48"
-                  offsetFromSymbolStart = "1124">
+                  offsetFromSymbolStart = "1388">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -608,7 +608,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "45"
                   endingLineNumber = "45"
-                  offsetFromSymbolStart = "440">
+                  offsetFromSymbolStart = "507">
                </Location>
                <Location
                   uuid = "77BEEEF9-5D75-4D6D-986B-34232428A37F - 5c90f067dfabf301"
@@ -623,7 +623,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "45"
                   endingLineNumber = "45"
-                  offsetFromSymbolStart = "692">
+                  offsetFromSymbolStart = "817">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -672,7 +672,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
                   endingLineNumber = "41"
-                  offsetFromSymbolStart = "2192">
+                  offsetFromSymbolStart = "2737">
                </Location>
                <Location
                   uuid = "BD2F737D-48BC-4F2D-ACA5-60790AAB6B72 - 5c90f067dfabf301"
@@ -687,7 +687,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
                   endingLineNumber = "42"
-                  offsetFromSymbolStart = "280">
+                  offsetFromSymbolStart = "312">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -791,22 +791,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AC997C56-0A91-4016-B177-6657F4A61D69"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Login/RegisterVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "registerClick()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "0CBF7848-4485-44B8-AB38-BE699B1B78CF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -839,15 +823,143 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "80FEA736-B80D-4A7A-A112-C8D48E875804"
+            uuid = "CCFEB3CD-7994-4653-823E-76D00E8204BC"
             shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "getKJ128HistoryDataLists(url:beginTime:endTime:jobCardCode:index:pageSize:finishedCallBack:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D563CEBB-64DF-4D0E-819F-3620976AA915"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "getKJ128HistoryDataLists(url:beginTime:endTime:jobCardCode:index:pageSize:finishedCallBack:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D563CEBB-64DF-4D0E-819F-3620976AA915 - fe452fd5ad556e85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.AnyObject) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.KJ128HistoryViewModel.getKJ128HistoryDataLists(url: Swift.String, beginTime: Swift.String, endTime: Swift.String, jobCardCode: Swift.String, index: Swift.Int, pageSize: Swift.Int, finishedCallBack: () -&gt; ()) -&gt; ()"
+                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  uuid = "D563CEBB-64DF-4D0E-819F-3620976AA915 - fe452fd5ad556e85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.AnyObject) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.KJ128HistoryViewModel.getKJ128HistoryDataLists(url: Swift.String, beginTime: Swift.String, endTime: Swift.String, jobCardCode: Swift.String, index: Swift.Int, pageSize: Swift.Int, finishedCallBack: () -&gt; ()) -&gt; ()"
+                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "810">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37FF5250-8E88-4B5A-8460-229A5ABA9E54"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "getKJ128HistoryDataLists(url:beginTime:endTime:jobCardCode:index:pageSize:finishedCallBack:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD7D1067-BD97-4A28-8C96-74EF88C554F5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "getKJ128HistoryDataLists(url:beginTime:endTime:jobCardCode:index:pageSize:finishedCallBack:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "238FF2CF-FAAA-487F-B439-6CB2D5493938"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "getPickerViewValue()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0EA7B72-3543-418B-AC6B-4C6AB0B34DC0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
+            landmarkName = "getPickerViewValue()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9527F479-0AB2-43B5-A655-2DDD5406A959"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShineApp/Class/Login/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "loginClick()"
             landmarkType = "7">
          </BreakpointContent>
@@ -855,48 +967,176 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "156DAAB9-5AEB-4E66-B5FA-DBFFD9846BC7"
+            uuid = "C2743707-BD49-467D-A504-7258EFF3DA70"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "touchUpInside(sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C2743707-BD49-467D-A504-7258EFF3DA70 - 946546a9ecf18f96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HomeController.touchUpInside(sender: __C.UIButton) -&gt; ()"
+                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/HomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "1053">
+               </Location>
+               <Location
+                  uuid = "C2743707-BD49-467D-A504-7258EFF3DA70 - db6df0df00e2f854"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIAlertAction) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HomeController.touchUpInside(sender: __C.UIButton) -&gt; ()"
+                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/HomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "139"
+                  endingLineNumber = "139"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FC5D573-5C3B-401F-A97D-8FC871850D8F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Login/LoginViewController.swift"
+            filePath = "ShineApp/Class/Home/HomeController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
-            landmarkName = "loginClick()"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "touchUpInside(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E207681B-FBD6-450E-BD2F-FCED828B5962"
+            uuid = "94747B8C-ED0B-4C06-A220-48611FE68051"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Login/LoginViewController.swift"
+            filePath = "ShineApp/Class/Home/HomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "touchUpInside(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4EA4A30F-C941-4034-9888-B5BDFF5826DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "135"
             endingLineNumber = "135"
-            landmarkName = "loginClick()"
+            landmarkName = "touchUpInside(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5EAC4DF1-D273-41D6-A3BD-CAADAEA6F886"
+            uuid = "C872D629-06AA-41A9-8AE9-B88AA5DBD231"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Login/LoginViewController.swift"
+            filePath = "ShineApp/Class/Home/HomeController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "loginClick()"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "touchUpInside(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FE5FDA77-DAEC-4FD8-8A25-B1A0D969E945"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "touchUpInside(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60907357-E59F-491F-B829-00623BE152CD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "touchUpInside(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FEBA1FAA-F1D8-4D83-9E33-41147AC916C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "touchUpInside(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C0ED36C-A257-4582-8553-A7BDA62D351B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "touchUpInside(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

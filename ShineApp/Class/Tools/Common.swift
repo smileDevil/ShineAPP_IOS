@@ -76,5 +76,5 @@ let frameTitleFontSize = UIFont.systemFont(ofSize: 16)
 let clickRadius = 8
 
 //url
-//let REQUESTURL = "http://172.16.19.127:10010/SHHWebService.asmx/"
-let REQUESTURL = "http://dev.3shine.com:8100/SHHWebService.asmx/"
+let REQUESTURL = "http://172.16.19.127:10010/SHHWebService.asmx/"
+//let REQUESTURL = "http://dev.3shine.com:8100/SHHWebService.asmx/"

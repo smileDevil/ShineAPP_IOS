@@ -58,6 +58,7 @@ class Kj70HistoryListController: UIViewController {
         }else{
             mUrl =  "GetKj70HisSwitchChangeInfo"
         }
+        
         tableview.register(UINib(nibName: CellStr, bundle: nil), forCellReuseIdentifier: CellStr)
         
         self.view.addSubview(tableview)

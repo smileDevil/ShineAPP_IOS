@@ -9,33 +9,36 @@
 import SwiftUI
 
 struct PostListView: View {
-    init() {
-        UITableViewCell.appearance().selectionStyle = .none
+    let category : PostListCategory
+    var postlist : PostList {
+        switch category {
+        case .recommend:
+            return loadPostListData(fileName: "PostListData_recommend_1.json")
+        case .hot :  return loadPostListData(fileName: "PostListData_hot_1.json")
+           
+        }
     }
+    
+   
     var body: some View {
         List{
-            ForEach(postlist.list,id: \.id){ post in
+            
+            ForEach( self.postlist.list){ post in
                 ZStack{
-                    PostCell(post:post)
+                       PostCell(post:post)
                     NavigationLink(destination: PostDetailView(post: post)) {
-                          EmptyView()
+                        EmptyView()
                     }.hidden()
-                }
-                
-                .listRowInsets(EdgeInsets())
-                  }
+                }.listRowInsets(EdgeInsets())
+
+            }
         }
-        
       
     }
 }
 
 struct PostListView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
-           PostListView()
-            .navigationBarTitle("title",displayMode: .inline)
-        }
-        
+        PostListView(category: .recommend)
     }
 }

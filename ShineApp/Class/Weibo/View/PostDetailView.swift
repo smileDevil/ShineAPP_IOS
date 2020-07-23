@@ -18,7 +18,7 @@ struct PostDetailView: View {
                 Text("评论\(i)")
             }
         }
-    .navigationBarTitle("详情")
+        .navigationBarTitle("详情",displayMode: .inline)
     }
 }
 

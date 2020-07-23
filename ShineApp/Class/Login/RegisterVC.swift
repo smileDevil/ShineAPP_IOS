@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+   
 class RegisterVC: BaseViewController {
     @IBOutlet weak var userBackView: UIView!
     @IBOutlet weak var psdBackView: UIView!
@@ -19,6 +19,7 @@ class RegisterVC: BaseViewController {
     @IBOutlet weak var agreementBtn: UIButton!
     @IBOutlet weak var loadImageView: UIImageView!
     @IBOutlet weak var loadBackView: UIView!
+    private lazy var loginViewModel: LoginViewModel = LoginViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -126,32 +127,41 @@ extension RegisterVC {
                               return
         }
         
-        var hasUser = false
-        var userArr = UserDefaults.standard.object(forKey: "userArr") as? [String] ?? [String]()
-        var passArr = UserDefaults.standard.object(forKey: "passArr") as? [String] ?? [String]()
-        for str in userArr {
-            if str == user {
-                hasUser = true
+        loginViewModel.registerUser(userName: user, psd: psd) {
+            
+            let registerStr = self.loginViewModel.registerReturnStr
+            if registerStr == "注册成功" {
+            AlertHepler.showAlert(titleStr: nil, msgStr: "注册成功", currentVC: self, cancelHandler: { (canleAction) in
+                                                                    UIApplication.shared.windows[0].rootViewController = LoginViewController()
+                        }, otherBtns: nil, otherHandler: nil)
             }
         }
-        if hasUser {
-            AlertHepler.showAlert(titleStr: nil, msgStr: "该用户已存在", currentVC: self, cancelHandler: { (canleAction) in
-                                             return
-                                         }, otherBtns: nil, otherHandler: nil)
-                                         return
-        }
-        else{
-            userArr.append(user)
-            passArr.append(psd)
-            UserDefaults.standard.set(userArr, forKey: "userArr")
-            UserDefaults.standard.set(passArr,forKey: "passArr")
-              AlertHepler.showAlert(titleStr: nil, msgStr: "注册成功", currentVC: self, cancelHandler: { (canleAction) in
-                                                        UIApplication.shared.windows[0].rootViewController = LoginViewController()
-            }, otherBtns: nil, otherHandler: nil)
-            return
-           
-        }
-            
+        
+//        var hasUser = false
+//        var userArr = UserDefaults.standard.object(forKey: "userArr") as? [String] ?? [String]()
+//        var passArr = UserDefaults.standard.object(forKey: "passArr") as? [String] ?? [String]()
+//        for str in userArr {
+//            if str == user {
+//                hasUser = true
+//            }
+//        }
+//        if hasUser {
+//            AlertHepler.showAlert(titleStr: nil, msgStr: "该用户已存在", currentVC: self, cancelHandler: { (canleAction) in
+//                                             return
+//                                         }, otherBtns: nil, otherHandler: nil)
+//                                         return
+//        }
+//        else{
+//            userArr.append(user)
+//            passArr.append(psd)
+//            UserDefaults.standard.set(userArr, forKey: "userArr")
+//            UserDefaults.standard.set(passArr,forKey: "passArr")
+//              AlertHepler.showAlert(titleStr: nil, msgStr: "注册成功", currentVC: self, cancelHandler: { (canleAction) in
+//                                                        UIApplication.shared.windows[0].rootViewController = LoginViewController()
+//            }, otherBtns: nil, otherHandler: nil)
+//            return
+//        }
+//
     }
     
     @objc func agreementClick(){

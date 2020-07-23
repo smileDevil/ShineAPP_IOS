@@ -30,7 +30,7 @@ class KJ70HistorySearchController: UIViewController {
     @IBOutlet weak var endTimeLabel: UILabel!
     private var endDate : Date!
     
-    fileprivate let navTitleArr : [String] = ["历史报警","历史预警","历史设备故障","历史断电","历史模拟量","历史开关量","历史模拟量折线图"]
+    fileprivate let navTitleArr : [String] = ["历史报警","历史预警","历史设备故障","历史断电","历史模拟量","历史开关量"]//,"历史模拟量折线图"
     fileprivate var selectTitle = "历史报警"
     private lazy var myViewModel : RealTimeWaringViewModel = RealTimeWaringViewModel()
     private lazy var deviceNameTypeArr : [String] = [String]()
@@ -191,11 +191,11 @@ extension KJ70HistorySearchController {
                             }, otherBtns: nil, otherHandler: nil)
                        return
             }
-            let vc : LineChartsVC = LineChartsVC()
-            vc.beginDate = self.begintTimeLabel.text! + " 00:00:00"
-            vc.endDate = self.endTimeLabel.text! + " 23:59:29"
-            vc.mSensor = selectSensorModel == nil ? "" : String(selectSensorModel.SensorNum)
-            self.navigationController?.pushViewController(vc, animated: true)
+//            let vc : LineChartsVC = LineChartsVC()
+//            vc.beginDate = self.begintTimeLabel.text! + " 00:00:00"
+//            vc.endDate = self.endTimeLabel.text! + " 23:59:29"
+//            vc.mSensor = selectSensorModel == nil ? "" : String(selectSensorModel.SensorNum)
+//            self.navigationController?.pushViewController(vc, animated: true)
         }else{
             let vc : Kj70HistoryListController = Kj70HistoryListController()
             vc.beginDate = self.begintTimeLabel.text! + " 00:00:00"
@@ -210,7 +210,7 @@ extension KJ70HistorySearchController {
 }
 extension KJ70HistorySearchController:UIPickerViewDelegate,UIPickerViewDataSource{
     //创建pickview
-    func createPickView(flag:Int)  {
+    func createPickView(flag:Int){
         view.endEditing(true)
         dismissView = UIView(frame: CGRect(x: 0, y: 0, width: mScreenW, height: mScreenH))
         dismissView.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.35)

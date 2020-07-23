@@ -30,8 +30,8 @@ class KJ128HistorySearchVC: UIViewController
        @IBOutlet weak var endTimeBtn: UIButton!
        @IBOutlet weak var endTimeLabel: UILabel!
        private var endDate : Date!
-    fileprivate let navTitleArr : [String] = ["历史超时报警","历史预警","历史设备故障","历史断电","历史模拟量","历史开关量","历史模拟量折线图"]
-    fileprivate var selectTitle = "历史超时报警"
+    fileprivate let navTitleArr : [String] = ["历史井下时间","历史超时报警","历史超员报警","历史超员/限制区域报警","历史求救报警","历史分站状态","历史区域信息","历史考勤"]
+    fileprivate var selectTitle = "历史井下时间"
       private lazy var myViewModel :KJ128HistoryViewModel = KJ128HistoryViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +45,7 @@ extension KJ128HistorySearchVC {
     func initView(){
         navTitView = NavTitleView(frame: CGRect(x: 0, y: 0, width: 180, height: cvTopNavHeight))
         navTitView.titleBtn?.addTarget(self, action: #selector(chooseDataType), for: .touchUpInside)
-        navTitView.titleBtn?.setTitle("历史报警", for: .normal)
+        navTitView.titleBtn?.setTitle("历史井下时间", for: .normal)
         self.navigationItem.titleView = navTitView
         
         topTimeView.frame = CGRect(x: 0, y: 0, width: mScreenW, height: 90)
@@ -79,7 +79,7 @@ extension KJ128HistorySearchVC {
         makeSureBtn.addTarget(self, action: #selector(makeSureClick), for: .touchUpInside)
         self.view.addSubview(makeSureBtn)
         //获取当前系统时间
-       // getNowDate()
+        getNowDate()
         //获取设备类型数据
         getAllPersons()
     }
@@ -90,7 +90,7 @@ extension KJ128HistorySearchVC {
     @objc func chooseDataType(sender:UIButton){
         if dismissView == nil {
             mFlag = 1
-          //  createPickView(flag: mFlag)
+            createPickView(flag: mFlag)
         }
     }
     //设备提交
@@ -134,7 +134,7 @@ extension KJ128HistorySearchVC {
         self.endTimeLabel.text = formatter.string(from: date)
     }
     
-    //获取设备类型
+    //获取人员编号
     func getAllPersons(){
         //获取可选择类型
         myViewModel.getKJ128PersonLists{
@@ -157,9 +157,10 @@ extension KJ128HistorySearchVC {
     //点击确认按钮
     @objc func makeSureClick(){
       
-            let vc : Kj70HistoryListController = Kj70HistoryListController()
+            let vc : KJ128HistoryDataListVC = KJ128HistoryDataListVC()
             vc.beginDate = self.begintTimeLabel.text! + " 00:00:00"
             vc.endDate = self.endTimeLabel.text! + " 23:59:29"
+           vc.jobCardCode = selectjobCardModel == nil ? "" : selectjobCardModel.JobCardCode
            // vc.mSensor = selectSensorModel == nil ? "" : String(selectSensorModel.SensorNum)
             vc.searchTitle = self.selectTitle
             self.navigationController?.pushViewController(vc, animated: true)

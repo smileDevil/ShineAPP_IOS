@@ -259,6 +259,10 @@
 		37906B32245272BA0002C37A /* KJ128StationInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37906B31245272BA0002C37A /* KJ128StationInfoModel.swift */; };
 		37906B35245279C90002C37A /* KJ128BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37906B33245279C90002C37A /* KJ128BaseCell.swift */; };
 		37906B36245279C90002C37A /* KJ128BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37906B34245279C90002C37A /* KJ128BaseCell.xib */; };
+		37A30DDE246E177500DCD66B /* KJ70HistoryCell_SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A30DDD246E177500DCD66B /* KJ70HistoryCell_SwiftUI.swift */; };
+		37A30DE0246E84BD00DCD66B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A30DDF246E84BD00DCD66B /* HomeView.swift */; };
+		37A30DE2246E895A00DCD66B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A30DE1246E895A00DCD66B /* UserData.swift */; };
+		37A30DE4246E8DE200DCD66B /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A30DE3246E8DE200DCD66B /* HScrollViewController.swift */; };
 		37AD9F59244ED0DB00261330 /* KJ128DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9F57244ED0DB00261330 /* KJ128DataController.swift */; };
 		37AD9F5A244ED0DB00261330 /* KJ128DataController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AD9F58244ED0DB00261330 /* KJ128DataController.xib */; };
 		37AD9F5D244EDFCE00261330 /* KJ128RealTimePoepleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9F5B244EDFCE00261330 /* KJ128RealTimePoepleVC.swift */; };
@@ -302,6 +306,9 @@
 		37B39A23243B0E34005240B5 /* shaixuan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37B39A20243B0E33005240B5 /* shaixuan@2x.png */; };
 		37B39A24243B0E34005240B5 /* shaixuan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37B39A21243B0E33005240B5 /* shaixuan@3x.png */; };
 		37B39A26243B112C005240B5 /* welcomx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37B39A25243B112C005240B5 /* welcomx.jpg */; };
+		37B7EF2E24AD731600E55721 /* KuangyaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7EF2C24AD731600E55721 /* KuangyaController.swift */; };
+		37B7EF2F24AD731600E55721 /* KuangyaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B7EF2D24AD731600E55721 /* KuangyaController.xib */; };
+		37B7EF3324AD79A000E55721 /* bzt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37B7EF3224AD79A000E55721 /* bzt.jpeg */; };
 		37D428B92415DFF400E6B330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D428B82415DFF400E6B330 /* AppDelegate.swift */; };
 		37D428BB2415DFF400E6B330 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D428BA2415DFF400E6B330 /* SceneDelegate.swift */; };
 		37D428BD2415DFF400E6B330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D428BC2415DFF400E6B330 /* ContentView.swift */; };
@@ -311,6 +318,11 @@
 		37E0FB9A2463977C009D7CDA /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E0FB982463977C009D7CDA /* RegisterVC.xib */; };
 		37E0FB9D2463D368009D7CDA /* RegisterAgreementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E0FB9B2463D368009D7CDA /* RegisterAgreementVC.swift */; };
 		37E0FB9E2463D368009D7CDA /* RegisterAgreementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E0FB9C2463D368009D7CDA /* RegisterAgreementVC.xib */; };
+		37E9FC62246B7D1800B47AB8 /* KJ128HistoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9FC61246B7D1800B47AB8 /* KJ128HistoryDataModel.swift */; };
+		37E9FC65246B976200B47AB8 /* KJ128HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9FC63246B976200B47AB8 /* KJ128HistoryCell.swift */; };
+		37E9FC66246B976200B47AB8 /* KJ128HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E9FC64246B976200B47AB8 /* KJ128HistoryCell.xib */; };
+		37E9FC6D246BBAE400B47AB8 /* KJ128HistoryDataListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9FC6B246BBAE400B47AB8 /* KJ128HistoryDataListVC.swift */; };
+		37E9FC6E246BBAE400B47AB8 /* KJ128HistoryDataListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E9FC6C246BBAE400B47AB8 /* KJ128HistoryDataListVC.xib */; };
 		37F2005E245668F2004BF3CA /* KJ128RealTimeWaringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2005C245668F2004BF3CA /* KJ128RealTimeWaringCell.swift */; };
 		37F2005F245668F2004BF3CA /* KJ128RealTimeWaringCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F2005D245668F2004BF3CA /* KJ128RealTimeWaringCell.xib */; };
 		37F2006124567BB0004BF3CA /* KJ128RealTimeWaringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2006024567BB0004BF3CA /* KJ128RealTimeWaringModel.swift */; };
@@ -574,6 +586,11 @@
 		37906B31245272BA0002C37A /* KJ128StationInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128StationInfoModel.swift; sourceTree = "<group>"; };
 		37906B33245279C90002C37A /* KJ128BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128BaseCell.swift; sourceTree = "<group>"; };
 		37906B34245279C90002C37A /* KJ128BaseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128BaseCell.xib; sourceTree = "<group>"; };
+		37A30DDC246D30AC00DCD66B /* 智慧矿山助手Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "智慧矿山助手Debug.entitlements"; sourceTree = "<group>"; };
+		37A30DDD246E177500DCD66B /* KJ70HistoryCell_SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ70HistoryCell_SwiftUI.swift; sourceTree = "<group>"; };
+		37A30DDF246E84BD00DCD66B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		37A30DE1246E895A00DCD66B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		37A30DE3246E8DE200DCD66B /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
 		37AD9F57244ED0DB00261330 /* KJ128DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128DataController.swift; sourceTree = "<group>"; };
 		37AD9F58244ED0DB00261330 /* KJ128DataController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128DataController.xib; sourceTree = "<group>"; };
 		37AD9F5B244EDFCE00261330 /* KJ128RealTimePoepleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimePoepleVC.swift; sourceTree = "<group>"; };
@@ -617,6 +634,9 @@
 		37B39A20243B0E33005240B5 /* shaixuan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shaixuan@2x.png"; sourceTree = "<group>"; };
 		37B39A21243B0E33005240B5 /* shaixuan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shaixuan@3x.png"; sourceTree = "<group>"; };
 		37B39A25243B112C005240B5 /* welcomx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcomx.jpg; sourceTree = "<group>"; };
+		37B7EF2C24AD731600E55721 /* KuangyaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuangyaController.swift; sourceTree = "<group>"; };
+		37B7EF2D24AD731600E55721 /* KuangyaController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KuangyaController.xib; sourceTree = "<group>"; };
+		37B7EF3224AD79A000E55721 /* bzt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bzt.jpeg; sourceTree = "<group>"; };
 		37D428B52415DFF400E6B330 /* 智慧矿山助手.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "智慧矿山助手.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D428B82415DFF400E6B330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D428BA2415DFF400E6B330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -628,6 +648,11 @@
 		37E0FB982463977C009D7CDA /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
 		37E0FB9B2463D368009D7CDA /* RegisterAgreementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAgreementVC.swift; sourceTree = "<group>"; };
 		37E0FB9C2463D368009D7CDA /* RegisterAgreementVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterAgreementVC.xib; sourceTree = "<group>"; };
+		37E9FC61246B7D1800B47AB8 /* KJ128HistoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128HistoryDataModel.swift; sourceTree = "<group>"; };
+		37E9FC63246B976200B47AB8 /* KJ128HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128HistoryCell.swift; sourceTree = "<group>"; };
+		37E9FC64246B976200B47AB8 /* KJ128HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128HistoryCell.xib; sourceTree = "<group>"; };
+		37E9FC6B246BBAE400B47AB8 /* KJ128HistoryDataListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128HistoryDataListVC.swift; sourceTree = "<group>"; };
+		37E9FC6C246BBAE400B47AB8 /* KJ128HistoryDataListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128HistoryDataListVC.xib; sourceTree = "<group>"; };
 		37F2005C245668F2004BF3CA /* KJ128RealTimeWaringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimeWaringCell.swift; sourceTree = "<group>"; };
 		37F2005D245668F2004BF3CA /* KJ128RealTimeWaringCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJ128RealTimeWaringCell.xib; sourceTree = "<group>"; };
 		37F2006024567BB0004BF3CA /* KJ128RealTimeWaringModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJ128RealTimeWaringModel.swift; sourceTree = "<group>"; };
@@ -678,6 +703,7 @@
 		3727776A24249DF300816C72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				37B7EF3224AD79A000E55721 /* bzt.jpeg */,
 				3765946E2452BF4B005C537B /* fs_main_selected.png */,
 				3765947C2452BF4D005C537B /* fs_main_selected@2x.png */,
 				3765946A2452BF4A005C537B /* fs_main_selected@3x.png */,
@@ -891,6 +917,7 @@
 			children = (
 				372CF5BA243EF7D500CBE399 /* HistoryWaringCell.swift */,
 				372CF5BB243EF7D500CBE399 /* HistoryWaringCell.xib */,
+				37A30DDD246E177500DCD66B /* KJ70HistoryCell_SwiftUI.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -923,6 +950,7 @@
 		376FF11E2419C71500F0DAFA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				37B7EF2924AD71C900E55721 /* Kuangya */,
 				372777A72425DB7900816C72 /* HomeController.swift */,
 				372777A82425DB7900816C72 /* HomeController.xib */,
 				3727783A242C7BD200816C72 /* KJ70 */,
@@ -987,6 +1015,9 @@
 				3727772E24205E6A00816C72 /* PostImageCell.swift */,
 				372777302420724A00816C72 /* PostDetailView.swift */,
 				37277732242074D400816C72 /* HomeNavigationBar.swift */,
+				37A30DDF246E84BD00DCD66B /* HomeView.swift */,
+				37A30DE1246E895A00DCD66B /* UserData.swift */,
+				37A30DE3246E8DE200DCD66B /* HScrollViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1154,6 +1185,8 @@
 		37AD9F51244ECC4400261330 /* KJ128History */ = {
 			isa = PBXGroup;
 			children = (
+				37E9FC6B246BBAE400B47AB8 /* KJ128HistoryDataListVC.swift */,
+				37E9FC6C246BBAE400B47AB8 /* KJ128HistoryDataListVC.xib */,
 				37F2006524596749004BF3CA /* KJ128HistorySearchVC.swift */,
 				37F2006624596749004BF3CA /* KJ128HistorySearchVC.xib */,
 				37F200642456C248004BF3CA /* View */,
@@ -1235,6 +1268,15 @@
 			path = KJ70History;
 			sourceTree = "<group>";
 		};
+		37B7EF2924AD71C900E55721 /* Kuangya */ = {
+			isa = PBXGroup;
+			children = (
+				37B7EF2C24AD731600E55721 /* KuangyaController.swift */,
+				37B7EF2D24AD731600E55721 /* KuangyaController.xib */,
+			);
+			path = Kuangya;
+			sourceTree = "<group>";
+		};
 		37D428AC2415DFF400E6B330 = {
 			isa = PBXGroup;
 			children = (
@@ -1256,6 +1298,7 @@
 		37D428B72415DFF400E6B330 /* ShineApp */ = {
 			isa = PBXGroup;
 			children = (
+				37A30DDC246D30AC00DCD66B /* 智慧矿山助手Debug.entitlements */,
 				3727776A24249DF300816C72 /* Images */,
 				376FF1272419CA0F00F0DAFA /* Resources */,
 				376FF11D2419C70400F0DAFA /* Class */,
@@ -1290,6 +1333,7 @@
 			isa = PBXGroup;
 			children = (
 				37F2006B2459691C004BF3CA /* PersonNameModel.swift */,
+				37E9FC61246B7D1800B47AB8 /* KJ128HistoryDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1297,6 +1341,8 @@
 		37F200642456C248004BF3CA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				37E9FC63246B976200B47AB8 /* KJ128HistoryCell.swift */,
+				37E9FC64246B976200B47AB8 /* KJ128HistoryCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1329,7 +1375,7 @@
 				37D428B12415DFF400E6B330 /* Sources */,
 				37D428B22415DFF400E6B330 /* Frameworks */,
 				37D428B32415DFF400E6B330 /* Resources */,
-				689B0F75ABAC90F927B39A6B /* [CP] Embed Pods Frameworks */,
+				6190848ED221A47FB9F87389 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1429,6 +1475,7 @@
 				376FF1A02419CA0F00F0DAFA /* bca7fdafly1gax1gqdnboj20c80atmxp.jpg in Resources */,
 				3727787224317DB800816C72 /* mine_blue.png in Resources */,
 				3727786D24317DB800816C72 /* home_blue_selected@3x.png in Resources */,
+				37E9FC6E246BBAE400B47AB8 /* KJ128HistoryDataListVC.xib in Resources */,
 				376FF1B42419CA1000F0DAFA /* 006PdkDogy1gap6ngiyn3j30u011idle.jpg in Resources */,
 				376FF1922419CA0F00F0DAFA /* bca7fdafgw1ekhkps65b1j2050050dg4.jpg in Resources */,
 				37AD9F72244EE07500261330 /* KJ128RealTimeCardVC.xib in Resources */,
@@ -1539,6 +1586,7 @@
 				3727786124317DB800816C72 /* mine_blue@3x.png in Resources */,
 				3727786524317DB800816C72 /* system_blue.png in Resources */,
 				376FF1AF2419CA1000F0DAFA /* 4e7f0c83gy1gam2mr1b81j22tc2407wi.jpg in Resources */,
+				37B7EF2F24AD731600E55721 /* KuangyaController.xib in Resources */,
 				3727782D242B249600816C72 /* EquipmentStateController.xib in Resources */,
 				3727778A2424AC3B00816C72 /* display_inform_window.jpg in Resources */,
 				3727786B24317DB800816C72 /* onepage_blue@3x.png in Resources */,
@@ -1575,6 +1623,7 @@
 				376FF1892419CA0F00F0DAFA /* d0c21786ly8fsax1ftiifj20ro0ro43g.jpg in Resources */,
 				376FF1902419CA0F00F0DAFA /* 76297935ly1gatz89dzblj23402c0qv6.jpg in Resources */,
 				3727786724317DB800816C72 /* system_blue@3x.png in Resources */,
+				37E9FC66246B976200B47AB8 /* KJ128HistoryCell.xib in Resources */,
 				376FF1AC2419CA1000F0DAFA /* 8a0b5544gy1gauy2gz000j20u00n6wgj.jpg in Resources */,
 				376FF1A32419CA1000F0DAFA /* 630584a6gy1gau54zm4dtj20m80dftbv.jpg in Resources */,
 				376FF1CB2419CA1000F0DAFA /* bca7fdafly1gax1gqdhouj20c80axaam.jpg in Resources */,
@@ -1588,6 +1637,7 @@
 				376594922452BF4E005C537B /* video_main_selected@3x.png in Resources */,
 				372777EA2426073B00816C72 /* banner_main.png in Resources */,
 				3727786424317DB800816C72 /* system_blue_selected@3x.png in Resources */,
+				37B7EF3324AD79A000E55721 /* bzt.jpeg in Resources */,
 				376FF1932419CA0F00F0DAFA /* PostListData_recommend_1.json in Resources */,
 				37B399F524331F19005240B5 /* TypeViewCell.xib in Resources */,
 				376FF1862419CA0F00F0DAFA /* 7f9147a5ly1fzxlh4ovuej20e90fl4fo.jpg in Resources */,
@@ -1597,7 +1647,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		689B0F75ABAC90F927B39A6B /* [CP] Embed Pods Frameworks */ = {
+		6190848ED221A47FB9F87389 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1657,6 +1707,7 @@
 				372777B52425DBC200816C72 /* LiveController.swift in Sources */,
 				37B39A092434670D005240B5 /* RealTimeStationCell.swift in Sources */,
 				37B399FE2434596B005240B5 /* RealTimeStationModel.swift in Sources */,
+				37A30DE0246E84BD00DCD66B /* HomeView.swift in Sources */,
 				372CF5B1243EA7C400CBE399 /* Kj70HistoryListController.swift in Sources */,
 				37AD9F7A2450052E00261330 /* Kj128RealTimeViewModel.swift in Sources */,
 				372778172429F77200816C72 /* TJPageView.swift in Sources */,
@@ -1668,7 +1719,10 @@
 				378F3FCC2446F9B9008C76BE /* LineChartsVC.swift in Sources */,
 				37AD9F61244EDFE600261330 /* KJ128RealTimeCarsVC.swift in Sources */,
 				372777A02425AA0E00816C72 /* LoginViewController.swift in Sources */,
+				37A30DE2246E895A00DCD66B /* UserData.swift in Sources */,
 				3727779A2425A5F400816C72 /* View-Extension.swift in Sources */,
+				37A30DDE246E177500DCD66B /* KJ70HistoryCell_SwiftUI.swift in Sources */,
+				37E9FC62246B7D1800B47AB8 /* KJ128HistoryDataModel.swift in Sources */,
 				37B399FC243438AA005240B5 /* RealTimeTestPointModel.swift in Sources */,
 				3727779C2425A64B00816C72 /* CommonHelper.swift in Sources */,
 				37906B35245279C90002C37A /* KJ128BaseCell.swift in Sources */,
@@ -1699,8 +1753,10 @@
 				3727772F24205E6A00816C72 /* PostImageCell.swift in Sources */,
 				378F3FCF2447FD63008C76BE /* SimulatesCurveInfoModel.swift in Sources */,
 				37B39A1E24372B20005240B5 /* KJ70DeviceTypeModel.swift in Sources */,
+				37B7EF2E24AD731600E55721 /* KuangyaController.swift in Sources */,
 				3727776924249AA400816C72 /* DispatchQueue-Extension.swift in Sources */,
 				3727782C242B249600816C72 /* EquipmentStateController.swift in Sources */,
+				37E9FC65246B976200B47AB8 /* KJ128HistoryCell.swift in Sources */,
 				372CF5A2243B1BFD00CBE399 /* ListStateView.swift in Sources */,
 				372777A92425DB7900816C72 /* HomeController.swift in Sources */,
 				37D428B92415DFF400E6B330 /* AppDelegate.swift in Sources */,
@@ -1713,6 +1769,7 @@
 				376FF11C2419C6AC00F0DAFA /* RootTabBarViewController.swift in Sources */,
 				37277733242074D400816C72 /* HomeNavigationBar.swift in Sources */,
 				37277842242D9E6B00816C72 /* LoginViewModel.swift in Sources */,
+				37E9FC6D246BBAE400B47AB8 /* KJ128HistoryDataListVC.swift in Sources */,
 				372777DF2425F19E00816C72 /* JybCycieView.swift in Sources */,
 				372CF5A9243C180E00CBE399 /* KJ70HistorySearchController.swift in Sources */,
 				372777F42428A3A300816C72 /* KJ70DataController.swift in Sources */,
@@ -1723,6 +1780,7 @@
 				37B399F824343628005240B5 /* RealTimeEquipmentModel.swift in Sources */,
 				372778142429F77200816C72 /* TJTitleView.swift in Sources */,
 				37B399FA24343795005240B5 /* RealTimeRequestModel.swift in Sources */,
+				37A30DE4246E8DE200DCD66B /* HScrollViewController.swift in Sources */,
 				3727781A242AE63800816C72 /* EarlyWaringController.swift in Sources */,
 				37906B32245272BA0002C37A /* KJ128StationInfoModel.swift in Sources */,
 				37B39A1A2437188C005240B5 /* TypeSelectView.swift in Sources */,
@@ -1867,9 +1925,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "ShineApp/智慧矿山助手Debug.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.44;
 				DEVELOPMENT_ASSET_PATHS = "\"ShineApp/Preview Content\"";
 				DEVELOPMENT_TEAM = N38TCR32L7;
 				ENABLE_BITCODE = NO;
@@ -1895,7 +1954,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.44;
 				DEVELOPMENT_ASSET_PATHS = "\"ShineApp/Preview Content\"";
 				DEVELOPMENT_TEAM = N38TCR32L7;
 				ENABLE_BITCODE = NO;

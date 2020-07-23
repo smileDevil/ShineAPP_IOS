@@ -11,6 +11,8 @@ import UIKit
 class LoginViewModel: NSObject {
     //MARK: 懒加载属性
     lazy var mineModelList : [MineModel] = [MineModel]()
+    var registerReturnStr : String!
+    var loginReturnStr = ""
     
 }
 extension LoginViewModel{
@@ -20,7 +22,19 @@ extension LoginViewModel{
         let parameters = ["UserName":userName,"PassWord":psd]
         let url = REQUESTURL + "GetOtherLoginInfo"
         NetworkTools.requestData(type: .GET, url: url, paramenters: parameters as [String : NSString]) { (result) in
+            
             guard let resultDic =  result as? [String : NSObject]else {
+                let returnstr = result as? String
+                if returnstr != "" {
+                    self.loginReturnStr = returnstr!
+                    
+                }else{
+                  
+                   self.loginReturnStr = "账号密码有误"
+                        
+                }
+
+                finishedCallBack()
                 return
             }
             
@@ -35,7 +49,46 @@ extension LoginViewModel{
             
             finishedCallBack()
         }
+    }
+    
+    func requestStrData(userName:String,psd:String){
+            // 1.定义参数
+           let parameters = ["UserName":userName,"PassWord":psd]
+           let url = REQUESTURL + "GetOtherLoginInfo"
+           NetworkTools.requestStringData(type: .GET, url: url, paramenters: parameters as [String : NSString]) { (result) in
+               
+               guard let resultDic =  result as? [String : NSObject]else {
+                   let returnstr = result as? String
+                   self.loginReturnStr = returnstr ?? ""
+                
+                   return
+               }
+               
+               guard let resultArr = resultDic["rows"] as? [[String : NSObject]] else {
+                   return
+               }
+               
+               for dic in resultArr {
+                   var mine : MineModel = MineModel.init(dict: dic)
+                   self.mineModelList.append(mine)
+               }
+           }
+       }
+
+    
+    
+    
+    func registerUser(userName:String,psd:String ,finishedCallBack:@escaping () -> ()){
+             let parameters = ["UserName":userName,"PassWord":psd]
+               let url = REQUESTURL + "GetOtherAppRegister"
+                    NetworkTools.requestStringData(type: .GET, url: url, paramenters: parameters as [String : NSString]) { (result) in
+                   guard let resultStr =  result as? String else {
+                       return
+                   }
+                   self.registerReturnStr = resultStr
         
+                   finishedCallBack()
+               }
     }
     
   

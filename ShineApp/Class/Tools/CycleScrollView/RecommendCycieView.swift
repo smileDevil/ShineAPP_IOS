@@ -17,13 +17,9 @@ class RecommendCycieView: UIView {
     var cycleModels : [[String : AnyObject]]?{
         didSet{
             //刷新collectionview
-            collectionView.reloadData()
-            
+            collectionView.reloadData() 
             //设置pagecontroller个数
-            
             pageController.numberOfPages = cycleModels?.count ?? 0
-            
-           
             
             if(cycleModels!.count > 1){
                 //为了实现往前滚 默认将collectionView 滚到一个位置
@@ -83,7 +79,8 @@ extension RecommendCycieView : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 //        return (cycleModels?.count ?? 0)*10000
         //return cycleModels?.count ?? 0
-        return 10 * 10000
+        //return 10 * 10000
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -73,7 +73,7 @@
                                 <constraint firstAttribute="height" constant="20" id="3gA-FD-OS4"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="web" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z21-kb-ERU">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z21-kb-ERU">
                             <rect key="frame" x="45" y="3" width="294" height="34"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="34" id="Pe7-gy-p7m"/>
@@ -103,7 +103,7 @@
                                 <constraint firstAttribute="width" constant="20" id="OKx-VI-QRg"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nJC-8H-wBJ">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nJC-8H-wBJ">
                             <rect key="frame" x="45" y="3" width="294" height="34"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="34" id="VTy-eH-nzK"/>

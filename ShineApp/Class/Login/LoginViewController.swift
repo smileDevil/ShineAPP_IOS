@@ -117,33 +117,33 @@ extension LoginViewController{
         var user : String = userTextFiled.text ?? ""
         var psd : String = psdTextFiled.text ?? ""
    
-        var hasUser = false
-        var userindex = 0
-            let userArr = UserDefaults.standard.object(forKey: "userArr") as? [String] ?? [String]()
-               let passArr = UserDefaults.standard.object(forKey: "passArr") as? [String] ?? [String]()
-               for (index , str) in userArr .enumerated(){
-                   if str == user {
-                       hasUser = true
-                       userindex = index
-                   }
-               }
-        if !hasUser && user != "web" {
-            AlertHepler.showAlert(titleStr: nil, msgStr: "用户名不存在", currentVC: self, cancelHandler: { (canleAction) in
-                return
-            }, otherBtns: nil, otherHandler: nil)
-            return
-        }else{
-            if user != "web" {
-                let inpass = passArr[userindex]
-                if psd != inpass {
-                    AlertHepler.showAlert(titleStr: nil, msgStr: "用户名密码不正确", currentVC: self, cancelHandler: { (canleAction) in
-                                  return
-                              }, otherBtns: nil, otherHandler: nil)
-                              return
-                }
-            }
-        }
-        
+//        var hasUser = false
+//        var userindex = 0
+//            let userArr = UserDefaults.standard.object(forKey: "userArr") as? [String] ?? [String]()
+//               let passArr = UserDefaults.standard.object(forKey: "passArr") as? [String] ?? [String]()
+//               for (index , str) in userArr .enumerated(){
+//                   if str == user {
+//                       hasUser = true
+//                       userindex = index
+//                   }
+//               }
+//        if !hasUser && user != "web" {
+//            AlertHepler.showAlert(titleStr: nil, msgStr: "用户名不存在", currentVC: self, cancelHandler: { (canleAction) in
+//                return
+//            }, otherBtns: nil, otherHandler: nil)
+//            return
+//        }else{
+//            if user != "web" {
+//                let inpass = passArr[userindex]
+//                if psd != inpass {
+//                    AlertHepler.showAlert(titleStr: nil, msgStr: "用户名密码不正确", currentVC: self, cancelHandler: { (canleAction) in
+//                                  return
+//                              }, otherBtns: nil, otherHandler: nil)
+//                              return
+//                }
+//            }
+//        }
+//        
         
         if(user.count <= 0) {
             AlertHepler.showAlert(titleStr: nil, msgStr: "用户名不能为空", currentVC: self, cancelHandler: { (canleAction) in
@@ -158,8 +158,8 @@ extension LoginViewController{
             return
         }
         
-        user = "web"
-        psd = "123"
+        //        user = "web"
+        //        psd = "123"
            
         
         loadBackView.isHidden = false
@@ -173,11 +173,18 @@ extension LoginViewController{
                 UserDefaults.standard.set(user, forKey: "user")
                 UserDefaults.standard.set(psd, forKey: "password")
 
-                UIApplication.shared.windows[0].rootViewController = RootTabBarViewController()
+                UIApplication.shared.windows[0].rootViewController = MyNavigationController(rootViewController: HomeController())
+                
             }else{
+                if self.loginViewModel.loginReturnStr != "" {
+                    AlertHepler.showAlert(titleStr: "提示", msgStr: self.loginViewModel.loginReturnStr, currentVC: self, cancelHandler: { (cancleAction) in
+                        return
+                    }, otherBtns: nil, otherHandler: nil)
+                }else {
                 AlertHepler.showAlert(titleStr: "提示", msgStr: "帐号没有满足条件的煤矿数据", currentVC: self, cancelHandler: { (cancleAction) in
                     return
                 }, otherBtns: nil, otherHandler: nil)
+                }
             }
         }
         

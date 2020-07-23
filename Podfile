@@ -4,9 +4,10 @@ platform :ios, '12.0'
 target 'ShineApp' do
 use_frameworks!
 pod 'Alamofire'
-pod 'Kingfisher','~>4.6.0'
+pod 'Kingfisher'
 pod 'MJRefresh'
-pod 'Charts'
+#pod 'Charts'
+#pod 'WechatOpenSDK'
 #pod 'ChartsRealm'
 
   # Pods for ShineApp

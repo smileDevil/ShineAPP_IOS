@@ -1,30 +1,24 @@
 PODS:
   - Alamofire (4.8.0)
-  - Charts (3.2.1):
-    - Charts/Core (= 3.2.1)
-  - Charts/Core (3.2.1)
-  - Kingfisher (4.6.4)
+  - Kingfisher (5.0.1)
   - MJRefresh (3.1.15.7)
 
 DEPENDENCIES:
   - Alamofire
-  - Charts
-  - Kingfisher (~> 4.6.0)
+  - Kingfisher
   - MJRefresh
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - Charts
     - Kingfisher
     - MJRefresh
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
-  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
-  Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
+  Kingfisher: 4f771421b9208185217550528a06fd48756cb7c2
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
 
-PODFILE CHECKSUM: a844fa70733195a93b1617b261ed2f5b4154f6d1
+PODFILE CHECKSUM: 8b0aa06e203403bd105f7d683972750e122891d3
 
 COCOAPODS: 1.9.1
