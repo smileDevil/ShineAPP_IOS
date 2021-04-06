@@ -8,12 +8,12 @@
 
 import UIKit
 
-class KJ128RealTimeCarsVC: UIViewController {
+class KJ128RealTimeCarsVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
- self.view.backgroundColor = mainColor
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = mainColor
+        
     }
 
 

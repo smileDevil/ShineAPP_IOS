@@ -55,7 +55,7 @@ class StationController: BaseViewController {
         headView.addSubview(countLabel)
         //添加搜索按钮
         let searchBtn = UIButton(frame:CGRect(x: Int(mScreenW - 26 - 15), y: 0, width: 26, height: HEAD_VIEW_HEIGHT))
-        searchBtn.setImage(UIImage(named: "shaixuan"), for: .normal)
+        //searchBtn.setImage(UIImage(named: "shaixuan"), for: .normal)
         headView.addSubview(searchBtn)
         searchBtn.addTarget(self, action: #selector(showRightView), for: .touchUpInside)
         searchBtn.isHidden = true //隐藏

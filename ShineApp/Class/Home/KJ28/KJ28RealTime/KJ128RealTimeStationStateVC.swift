@@ -13,7 +13,7 @@ private let CellStr : String = "KJ128BaseCell"
 private var mModelList : [KJ128StationInfoModel] = [KJ128StationInfoModel]()
 private var countLabel : UILabel = UILabel()
 private var noDataView : ListStateView = ListStateView()
-class KJ128RealTimeStationStateVC: UIViewController {
+class KJ128RealTimeStationStateVC: BaseViewController {
  private lazy var myViewModel : Kj128RealTimeViewModel = Kj128RealTimeViewModel()
     fileprivate lazy var tableView : UITableView  = {
            let tableview = UITableView(frame: CGRect(x: 0, y: HEAD_VIEW_HEIGHT, width: Int(mScreenW), height: Int(mScreenH) - HEAD_VIEW_HEIGHT - cvTopNavHeight - Int(navigationBarHeight)))

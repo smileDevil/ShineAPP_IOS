@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeTitleVIew" customModule="智慧矿山助手" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="2YX-l6-gY9"/>
+                <outlet property="titleLabel" destination="gY6-tP-nbL" id="OAo-ad-ZX0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wm0-Gd-nR7">
+                    <rect key="frame" x="175.5" y="12.5" width="15" height="15"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="asv-ei-A2S"/>
+                        <constraint firstAttribute="height" constant="15" id="yUT-Aw-m7M"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当日预警" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gY6-tP-nbL">
+                    <rect key="frame" x="195.5" y="12" width="53.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veY-lW-Xzl">
+                    <rect key="frame" x="0.0" y="39" width="414" height="1"/>
+                    <color key="backgroundColor" white="0.82272938070000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="MnB-22-FXE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gY6-tP-nbL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5AQ-QY-mPY"/>
+                <constraint firstAttribute="trailing" secondItem="veY-lW-Xzl" secondAttribute="trailing" id="7Am-qY-fdu"/>
+                <constraint firstItem="gY6-tP-nbL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="15" id="8gc-NO-R0w"/>
+                <constraint firstItem="gY6-tP-nbL" firstAttribute="leading" secondItem="Wm0-Gd-nR7" secondAttribute="trailing" constant="5" id="R9j-Xj-cU4"/>
+                <constraint firstItem="veY-lW-Xzl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eJp-W0-Hmx"/>
+                <constraint firstItem="Wm0-Gd-nR7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uDC-M5-2Ea"/>
+                <constraint firstAttribute="bottom" secondItem="veY-lW-Xzl" secondAttribute="bottom" id="w91-bw-6Ve"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-59.420289855072468" y="-68.303571428571431"/>
+        </view>
+    </objects>
+</document>

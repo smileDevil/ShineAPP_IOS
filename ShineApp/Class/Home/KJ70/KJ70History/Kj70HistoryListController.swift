@@ -12,7 +12,7 @@ private let HEAD_VIEW_HEIGHT = 0
 
 private var mModelList : [KJ70HistoryDataModel] = [KJ70HistoryDataModel]()
 private var noDataView : ListStateView = ListStateView()
-class Kj70HistoryListController: UIViewController {
+class Kj70HistoryListController: BaseViewController {
     var beginDate : String!
     var endDate : String!
     var mDeviceType : String!
@@ -203,9 +203,15 @@ extension Kj70HistoryListController: UITableViewDelegate,UITableViewDataSource {
         }else if searchTitle == "历史模拟量" {
             cell.placelabel.text = "\(model.Place ?? "无")"
             cell.waringStatelabel.text = model.TypeName == nil ? "" : model.TypeName
-            cell.sensorNumLabel.text = "平均值: \(model.StatisticaAvg ?? 0)" 
-            cell.valLabel.text = "最大值: \( model.StatisticaMaxValue ?? 0)"
-            cell.typeLabel.text = "最小值: \( model.StatisticaMinValue ?? 0)"
+            let staticAvgVal:Double  = model.StatisticaAvg as! Double
+            let staticAvgValStr = String(format:"%.2f",staticAvgVal)
+            cell.sensorNumLabel.text = "平均值: \(staticAvgValStr)"
+            let staticMaxVal:Double  = model.StatisticaMaxValue as! Double
+            let staticMaxValStr = String(format:"%.2f",staticAvgVal)
+            cell.valLabel.text = "最大值: \( staticMaxValStr)"
+            let staticMinVal:Double  = model.StatisticaMinValue as! Double
+            let staticMinValStr = String(format:"%.2f",staticAvgVal)
+            cell.typeLabel.text = "最小值: \( staticMinValStr)"
             cell.beginTimeLabel.text = "平均值时间: " + model.StatisticalTime
             cell.endTimeLabel.text = "最大值时间: " + model.StatisticaMaxDatetime
             cell.contiousLabel.text = "最小值时间: " + model.StatisticaMinDatetime

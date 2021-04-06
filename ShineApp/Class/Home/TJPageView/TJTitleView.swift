@@ -247,7 +247,8 @@ extension TJTitleView {
         }
         
 //        return (components[0] * 255, components[1] * 255, components[2] * 255)
-        return (255,255,255)
+       // return (255,255,255)
+         return (7,193,96)
     }
 }
 

@@ -6,7 +6,8 @@ use_frameworks!
 pod 'Alamofire'
 pod 'Kingfisher'
 pod 'MJRefresh'
-#pod 'Charts'
+pod 'Charts'
+pod 'JPush'
 #pod 'WechatOpenSDK'
 #pod 'ChartsRealm'
 

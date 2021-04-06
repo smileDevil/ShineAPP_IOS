@@ -12,7 +12,7 @@ class KJ128DataController: UIViewController {
         var pickerView:UIPickerView!
         var pickerBottomView : UIView!
         var dismissView :UIView!
-        var navTitView : NavTitleView = NavTitleView()
+        var navTitView : NavTitleView!
         fileprivate let navTitleArr : [String] = ["128实时数据","128历史数据"]
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -24,23 +24,23 @@ class KJ128DataController: UIViewController {
 
 extension KJ128DataController{
     func initView(){
+        
           navTitView = NavTitleView(frame: CGRect(x: 0, y: 0, width: 140, height: cvTopNavHeight))
           navTitView.titleBtn?.addTarget(self, action: #selector(chooseDataType), for: .touchUpInside)
           navTitView.titleBtn?.setTitle("128实时数据", for: .normal)
           self.navigationItem.titleView = navTitView
           
-          let titles = ["人员信息","车辆信息","实时报警","分站状态","区域信息","实时标识卡"]
+          let titles = ["人员信息","实时报警","分站状态","区域信息"]//"车辆信息",
           let style  = TJTitleStyle()
-                 style.isScrollEnable = true
+                 style.isScrollEnable = false
                  style.isShowBottomLine = true
                  style.isShowCover = false
           var childVcs = [UIViewController]()
           childVcs.append(KJ128RealTimePoepleVC())
-          childVcs.append(KJ128RealTimeCarsVC())
+//          childVcs.append(KJ128RealTimeCarsVC())
           childVcs.append(KJ128RealTimeWaringVC())
           childVcs.append(KJ128RealTimeStationStateVC())
           childVcs.append(KJ128RealTimeAreaVC())
-          childVcs.append(KJ128RealTimeCardVC())
          
           let frame = CGRect(x: 0, y: 0, width: mScreenW, height: mScreenH - navigationBarHeight)
           

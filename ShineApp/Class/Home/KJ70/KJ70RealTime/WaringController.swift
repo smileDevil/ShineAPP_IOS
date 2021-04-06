@@ -81,13 +81,13 @@ extension WaringController{
         
         //添加搜索按钮
         let searchBtn = UIButton(frame:CGRect(x: Int(mScreenW - 26 - 15), y: 0, width: 26, height: HEAD_VIEW_HEIGHT))
-        searchBtn.setImage(UIImage(named: "shaixuan"), for: .normal)
+       // searchBtn.setImage(UIImage(named: "shaixuan"), for: .normal)
         headView.addSubview(searchBtn)
         searchBtn.addTarget(self, action: #selector(showRightView), for: .touchUpInside)
         self.view.addSubview(tableView)
         noDataView.frame = CGRect(x: 0, y: HEAD_VIEW_HEIGHT, width: Int(mScreenW), height: Int(mScreenH) - HEAD_VIEW_HEIGHT - cvTopNavHeight - Int(navigationBarHeight))
-               noDataView.isHidden = true
-               self.view.addSubview(noDataView)
+        noDataView.isHidden = true
+            self.view.addSubview(noDataView)
         self.view.addSubview(typeTableView)
         addRightView()
         getDeviceTypes()
@@ -346,7 +346,7 @@ extension WaringController : UITableViewDataSource,UITableViewDelegate{
                 mUrl = "GetKj70RealTimeLogicAlarmInfo"
             }
             tableView.isHidden = true
-             self.typeBtn.setTitle(typeName, for: .normal)
+            self.typeBtn.setTitle(typeName, for: .normal)
             self.tableView.mj_header.beginRefreshing()
         }
     }

@@ -17,39 +17,57 @@ class LoginViewModel: NSObject {
 }
 extension LoginViewModel{
     
-    func requestData(userName:String,psd:String, finishedCallBack:@escaping ()->()){
+    func
+        requestData(userName:String,psd:String, finishedCallBack:@escaping ()->()){
          // 1.定义参数
         let parameters = ["UserName":userName,"PassWord":psd]
-        let url = REQUESTURL + "GetOtherLoginInfo"
+        var url = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+        if url == "" {
+            url = REQUESTURL + "GetOtherLoginInfo"
+        }else{
+            url = url + "GetOtherLoginInfo"
+        }
         NetworkTools.requestData(type: .GET, url: url, paramenters: parameters as [String : NSString]) { (result) in
-            
             guard let resultDic =  result as? [String : NSObject]else {
                 let returnstr = result as? String
                 if returnstr != "" {
                     self.loginReturnStr = returnstr!
-                    
                 }else{
-                  
                    self.loginReturnStr = "账号密码有误"
-                        
                 }
-
                 finishedCallBack()
                 return
             }
-            
             guard let resultArr = resultDic["rows"] as? [[String : NSObject]] else {
                 return
             }
-            
             for dic in resultArr {
-                var mine : MineModel = MineModel.init(dict: dic)
+                let mine : MineModel = MineModel.init(dict: dic)
                 self.mineModelList.append(mine)
             }
-            
             finishedCallBack()
         }
     }
+    
+    
+    func registerRid(){
+        let rid = UserDefaults.standard.string(forKey: "registId")
+        let parameters = ["Rid":rid]
+//        let url = REQUESTURL + "AppRegisterRid"
+        var url = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+              if url == "" {
+                  url = REQUESTURL + "AppRegisterRid"
+              }else{
+                  url = url + "AppRegisterRid"
+              }
+        NetworkTools.requestData(type: .GET, url: url, paramenters: parameters) { (result) in
+            let resultStr = result as? String
+            print(resultStr)
+        }
+    }
+    
+     
+    
     
     func requestStrData(userName:String,psd:String){
             // 1.定义参数

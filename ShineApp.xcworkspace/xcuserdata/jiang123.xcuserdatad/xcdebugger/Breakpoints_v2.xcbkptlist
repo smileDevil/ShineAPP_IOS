@@ -50,38 +50,6 @@
             endingLineNumber = "90"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B4BA4CE8-F8F2-438A-A568-CFE689046F12 - 4209d9d7c8e7bf8a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.JybCycieView.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
-                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Tools/CycleScrollView/JybCycieView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "90"
-                  endingLineNumber = "90"
-                  offsetFromSymbolStart = "122">
-               </Location>
-               <Location
-                  uuid = "B4BA4CE8-F8F2-438A-A568-CFE689046F12 - 4209d9d7c8e7bf8a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.JybCycieView.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
-                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Tools/CycleScrollView/JybCycieView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "90"
-                  endingLineNumber = "90"
-                  offsetFromSymbolStart = "518">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -199,22 +167,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D78039EB-CCA2-4DEE-95D8-5DFC067FD4DD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70RealTime/ViewModel/RealTimeWaringViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "getSensorList(typeCode:type:finishedCallBack:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "EDD23864-EF5A-43EE-AAFD-41D50D71FBBB"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -295,22 +247,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "34835831-034C-4433-B7D8-E5E5803F8E67"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "requestHistoryData(url:beginTime:endTime:index:pageSize:typeCode:sensornum:finishedCallBack:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "4F5AD3F6-B62F-4723-906F-9B642F12EF08"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -321,118 +257,6 @@
             startingLineNumber = "81"
             endingLineNumber = "81"
             landmarkName = "init(dict:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0CE7C040-7FBE-451F-A244-2C852B7E0E50"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
-            landmarkName = "createPickView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "95CFFFCA-8CF1-4B13-9F83-CDAE3948DD46"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
-            landmarkName = "createPickView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F14F9C08-55BC-492A-BE5E-B1766A07AC20"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "createPickView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3E53F703-5631-4D0F-B7A3-188AC6C12910"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "GetKj70HisSimulatesCurveInfo(sensorNum:beginTime:endTime:finishedCallBack:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3E53F703-5631-4D0F-B7A3-188AC6C12910 - aec6350cc373e1b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HistoryRequestModel.GetKj70HisSimulatesCurveInfo(sensorNum: Swift.String, beginTime: Swift.String, endTime: Swift.String, finishedCallBack: () -&gt; ()) -&gt; ()"
-                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "1581">
-               </Location>
-               <Location
-                  uuid = "3E53F703-5631-4D0F-B7A3-188AC6C12910 - 1e7e8f45e66448eb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.AnyObject) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HistoryRequestModel.GetKj70HisSimulatesCurveInfo(sensorNum: Swift.String, beginTime: Swift.String, endTime: Swift.String, finishedCallBack: () -&gt; ()) -&gt; ()"
-                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "71"
-                  endingLineNumber = "71"
-                  offsetFromSymbolStart = "312">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "428C775D-5B11-4799-93F0-65E5959BCEED"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "requestHistoryData(url:beginTime:endTime:index:pageSize:typeCode:sensornum:finishedCallBack:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -503,278 +327,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9DC2522F-AD2F-48E6-A861-FD8FC05B267B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "requestHistoryData(url:beginTime:endTime:index:pageSize:typeCode:sensornum:finishedCallBack:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6D1A695A-529C-4110-87C0-A4E32B428D95"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "requestHistoryData(url:beginTime:endTime:index:pageSize:typeCode:sensornum:finishedCallBack:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2E467F28-A363-4BDB-8539-4C0A24F1B1FB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "requestHistoryData(url:beginTime:endTime:index:pageSize:typeCode:sensornum:finishedCallBack:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2E467F28-A363-4BDB-8539-4C0A24F1B1FB - 5c90f067dfabf301"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.AnyObject) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HistoryRequestModel.requestHistoryData(url: Swift.String, beginTime: Swift.String, endTime: Swift.String, index: Swift.Int, pageSize: Swift.Int, typeCode: Swift.String, sensornum: Swift.String, finishedCallBack: () -&gt; ()) -&gt; ()"
-                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "1140">
-               </Location>
-               <Location
-                  uuid = "2E467F28-A363-4BDB-8539-4C0A24F1B1FB - 5c90f067dfabf301"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.AnyObject) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HistoryRequestModel.requestHistoryData(url: Swift.String, beginTime: Swift.String, endTime: Swift.String, index: Swift.Int, pageSize: Swift.Int, typeCode: Swift.String, sensornum: Swift.String, finishedCallBack: () -&gt; ()) -&gt; ()"
-                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "1388">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "77BEEEF9-5D75-4D6D-986B-34232428A37F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "requestHistoryData(url:beginTime:endTime:index:pageSize:typeCode:sensornum:finishedCallBack:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "77BEEEF9-5D75-4D6D-986B-34232428A37F - 5c90f067dfabf301"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.AnyObject) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HistoryRequestModel.requestHistoryData(url: Swift.String, beginTime: Swift.String, endTime: Swift.String, index: Swift.Int, pageSize: Swift.Int, typeCode: Swift.String, sensornum: Swift.String, finishedCallBack: () -&gt; ()) -&gt; ()"
-                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "507">
-               </Location>
-               <Location
-                  uuid = "77BEEEF9-5D75-4D6D-986B-34232428A37F - 5c90f067dfabf301"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.AnyObject) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HistoryRequestModel.requestHistoryData(url: Swift.String, beginTime: Swift.String, endTime: Swift.String, index: Swift.Int, pageSize: Swift.Int, typeCode: Swift.String, sensornum: Swift.String, finishedCallBack: () -&gt; ()) -&gt; ()"
-                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "817">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3B84C8ED-F417-4391-9431-0A686607C0F3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "requestHistoryData(url:beginTime:endTime:index:pageSize:typeCode:sensornum:finishedCallBack:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BD2F737D-48BC-4F2D-ACA5-60790AAB6B72"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "requestHistoryData(url:beginTime:endTime:index:pageSize:typeCode:sensornum:finishedCallBack:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BD2F737D-48BC-4F2D-ACA5-60790AAB6B72 - fefccab092d72e00"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HistoryRequestModel.requestHistoryData(url: Swift.String, beginTime: Swift.String, endTime: Swift.String, index: Swift.Int, pageSize: Swift.Int, typeCode: Swift.String, sensornum: Swift.String, finishedCallBack: () -&gt; ()) -&gt; ()"
-                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "2737">
-               </Location>
-               <Location
-                  uuid = "BD2F737D-48BC-4F2D-ACA5-60790AAB6B72 - 5c90f067dfabf301"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.AnyObject) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HistoryRequestModel.requestHistoryData(url: Swift.String, beginTime: Swift.String, endTime: Swift.String, index: Swift.Int, pageSize: Swift.Int, typeCode: Swift.String, sensornum: Swift.String, finishedCallBack: () -&gt; ()) -&gt; ()"
-                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ70/KJ70History/ViewModel/HistoryRequestModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "312">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E2376BD9-8E8C-4947-9F2F-44E75822A7C7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ28/KJ28RealTime/KJ128RealTimeAreaVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E243D171-BA1B-4A52-B549-968A9088D118"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70RealTime/EquipmentStateController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "getData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0FD8DFDF-D9B7-4788-8A0C-63A9F2EC2263"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70RealTime/EquipmentStateController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "getData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4B426F7F-3737-46EA-AF68-FE39C43AB03D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ70/KJ70RealTime/EquipmentStateController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "getData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A9845DAE-9089-4313-97D6-29ABD76B333B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/KJ28/KJ28RealTime/ViewModel/Kj128RealTimeViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "request128Waring(url:finishedCallBack:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "BAF6EA4C-68B0-442E-BE5B-FEB694E29523"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -830,8 +382,8 @@
             filePath = "ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "getKJ128HistoryDataLists(url:beginTime:endTime:jobCardCode:index:pageSize:finishedCallBack:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -846,42 +398,10 @@
             filePath = "ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "getKJ128HistoryDataLists(url:beginTime:endTime:jobCardCode:index:pageSize:finishedCallBack:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D563CEBB-64DF-4D0E-819F-3620976AA915 - fe452fd5ad556e85"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.AnyObject) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.KJ128HistoryViewModel.getKJ128HistoryDataLists(url: Swift.String, beginTime: Swift.String, endTime: Swift.String, jobCardCode: Swift.String, index: Swift.Int, pageSize: Swift.Int, finishedCallBack: () -&gt; ()) -&gt; ()"
-                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "500">
-               </Location>
-               <Location
-                  uuid = "D563CEBB-64DF-4D0E-819F-3620976AA915 - fe452fd5ad556e85"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.AnyObject) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.KJ128HistoryViewModel.getKJ128HistoryDataLists(url: Swift.String, beginTime: Swift.String, endTime: Swift.String, jobCardCode: Swift.String, index: Swift.Int, pageSize: Swift.Int, finishedCallBack: () -&gt; ()) -&gt; ()"
-                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "810">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -894,8 +414,8 @@
             filePath = "ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "getKJ128HistoryDataLists(url:beginTime:endTime:jobCardCode:index:pageSize:finishedCallBack:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -910,8 +430,8 @@
             filePath = "ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "getKJ128HistoryDataLists(url:beginTime:endTime:jobCardCode:index:pageSize:finishedCallBack:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -919,95 +439,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "238FF2CF-FAAA-487F-B439-6CB2D5493938"
+            uuid = "D65430F2-8E71-45B0-8D3F-4775591B5A13"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
+            filePath = "ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
-            landmarkName = "getPickerViewValue()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A0EA7B72-3543-418B-AC6B-4C6AB0B34DC0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
-            landmarkName = "getPickerViewValue()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9527F479-0AB2-43B5-A655-2DDD5406A959"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Login/LoginViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
-            landmarkName = "loginClick()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C2743707-BD49-467D-A504-7258EFF3DA70"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "touchUpInside(sender:)"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "getKJ128HistoryDataLists(url:beginTime:endTime:jobCardCode:index:pageSize:finishedCallBack:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "C2743707-BD49-467D-A504-7258EFF3DA70 - 946546a9ecf18f96"
+                  uuid = "D65430F2-8E71-45B0-8D3F-4775591B5A13 - 40c37fcf3c01c574"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HomeController.touchUpInside(sender: __C.UIButton) -&gt; ()"
+                  symbolName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.KJ128HistoryViewModel.getKJ128HistoryDataLists(url: Swift.String, beginTime: Swift.String, endTime: Swift.String, jobCardCode: Swift.String, index: Swift.Int, pageSize: Swift.Int, finishedCallBack: () -&gt; ()) -&gt; ()"
                   moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/HomeController.swift"
+                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "138"
-                  endingLineNumber = "138"
-                  offsetFromSymbolStart = "1053">
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "5633">
                </Location>
                <Location
-                  uuid = "C2743707-BD49-467D-A504-7258EFF3DA70 - db6df0df00e2f854"
+                  uuid = "D65430F2-8E71-45B0-8D3F-4775591B5A13 - fe452fd5ad556e85"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.UIAlertAction) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HomeController.touchUpInside(sender: __C.UIButton) -&gt; ()"
+                  symbolName = "closure #1 (Swift.AnyObject) -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.KJ128HistoryViewModel.getKJ128HistoryDataLists(url: Swift.String, beginTime: Swift.String, endTime: Swift.String, jobCardCode: Swift.String, index: Swift.Int, pageSize: Swift.Int, finishedCallBack: () -&gt; ()) -&gt; ()"
                   moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/HomeController.swift"
+                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/KJ28/KJ128History/ViewModel/KJ128HistoryViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
-                  offsetFromSymbolStart = "16">
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "312">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1015,128 +487,368 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2FC5D573-5C3B-401F-A97D-8FC871850D8F"
+            uuid = "A288FA54-C16E-47DE-98F4-B3DD51F9A666"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
+            filePath = "ShineApp/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "touchUpInside(sender:)"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "application(_:didReceiveRemoteNotification:fetchCompletionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "94747B8C-ED0B-4C06-A220-48611FE68051"
+            uuid = "71B4FC47-4095-4878-8BC2-6734DC55C54A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
+            filePath = "ShineApp/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "touchUpInside(sender:)"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "application(_:didReceiveRemoteNotification:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4EA4A30F-C941-4034-9888-B5BDFF5826DB"
+            uuid = "E7747C9C-7256-45A1-8CA9-00336B40AF80"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
+            filePath = "ShineApp/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "touchUpInside(sender:)"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "jpushNotificationCenter(_:openSettingsFor:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C872D629-06AA-41A9-8AE9-B88AA5DBD231"
+            uuid = "C99A31E8-E7D0-45E0-8BC4-5506D6146185"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
+            filePath = "ShineApp/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "touchUpInside(sender:)"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "jpushNotificationCenter(_:openSettingsFor:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FE5FDA77-DAEC-4FD8-8A25-B1A0D969E945"
+            uuid = "26BAD4A6-2DE5-4B2E-8711-D46CA345F5D3"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
+            filePath = "ShineApp/Class/Home/HomeWaringListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "touchUpInside(sender:)"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "60907357-E59F-491F-B829-00623BE152CD"
+            uuid = "90C0F7DE-4391-4700-A5C2-8CBC54FBE735"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
+            filePath = "ShineApp/Class/Home/NotificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "touchUpInside(sender:)"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "getMoreData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FEBA1FAA-F1D8-4D83-9E33-41147AC916C7"
+            uuid = "F2954F1F-65ED-4D8F-8C39-8AD7D5B2C639"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
+            filePath = "ShineApp/Class/Login/SettingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
-            landmarkName = "touchUpInside(sender:)"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "testClick()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7C0ED36C-A257-4582-8553-A7BDA62D351B"
+            uuid = "40E6205E-8DE6-45D2-9061-85EB4D1EC180"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/KJ70/KJ70RealTime/EquipmentStateController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "635B2FA2-5FF5-4826-9EEB-912BA6A1F9D8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShineApp/Class/Home/HomeController.swift"
+            filePath = "ShineApp/Class/Home/KJ70/KJ70History/LineChartsVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
-            landmarkName = "touchUpInside(sender:)"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A8BBF8F6-A6E8-4FEF-B9D7-315E71264557"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/KJ70/KJ70History/LineChartsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BFB22AD-E92B-4B15-8911-60F969FA0868"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/KJ70/KJ70History/LineChartsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40EF057B-E422-4BFF-A5E8-CCA7E62F2F9E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/KJ70/KJ70History/LineChartsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "backClick()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BBB2942-9674-4800-9821-56B922507DD3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeWaringListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "showRightView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C9AF81B-765D-4A5E-97BB-6711EB8FBCFF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeWaringListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "showRightView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1FB5E6CD-8ED4-4593-87AF-82F67A488CF5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeWaringListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "272"
+            endingLineNumber = "272"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3478EBE6-03A2-4E88-9241-BEDDC798B20A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeWaringListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "106BD404-B6DB-4B0E-B7EC-28518995B788"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeWaringListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "hiddenRightView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B9F55E4-08CC-4C13-A282-B9D0F6B3A3E2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/HomeWaringListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "hiddenRightView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8B9F55E4-08CC-4C13-A282-B9D0F6B3A3E2 - c9ae8dd9a2a9bbf4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HomeWaringListViewController.hiddenRightView() -&gt; ()"
+                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/HomeWaringListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "295">
+               </Location>
+               <Location
+                  uuid = "8B9F55E4-08CC-4C13-A282-B9D0F6B3A3E2 - 444a4bd01c4d8d08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in &#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;.HomeWaringListViewController.hiddenRightView() -&gt; ()"
+                  moduleName = "&#x667a;&#x6167;&#x77ff;&#x5c71;&#x52a9;&#x624b;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiang123/Desktop/MyPorject_Swift/ShineAPP_IOS/ShineApp/Class/Home/HomeWaringListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5050DD7-6F4E-4255-BFB0-C508C9ADB06B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/KJ70/KJ70History/KJ70HistorySearchController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "chooseDataType(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08B0976A-90E8-4D96-8E00-EBAEE2BA6869"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/KJ70/KJ70History/KJ70HistorySearchController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "chooseDataType(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FBF79FA-0EF3-449F-BEC8-60667B77644A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShineApp/Class/Home/KJ70/KJ70History/KJ70HistorySearchController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "chooseDataType(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

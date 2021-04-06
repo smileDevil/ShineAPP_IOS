@@ -13,7 +13,7 @@ private var mModelList : [KJ128HistoryDataModel] = [KJ128HistoryDataModel]()
 private var noDataView : ListStateView = ListStateView()
 private var CellStr : String = "KJ128HistoryCell"
 
-class KJ128HistoryDataListVC: UIViewController {
+class KJ128HistoryDataListVC: BaseViewController {
     var beginDate : String!
     var endDate : String!
     var searchTitle : String!
@@ -45,6 +45,7 @@ class KJ128HistoryDataListVC: UIViewController {
         self.view.addSubview(noDataView)
         if searchTitle == "历史井下时间" {
             mUrl = "GetKj128HisInMineTime"
+            
         }else if searchTitle == "历史超时报警" {
             mUrl = "GetKj128HisOvertimeAlarm"
         }else if searchTitle == "历史超员报警" {
@@ -54,7 +55,7 @@ class KJ128HistoryDataListVC: UIViewController {
         }else if searchTitle == "历史求救报警" {
             mUrl = "GetKj128HisHelpAlarm"
         }else if searchTitle == "历史分站状态" {
-            mUrl = "GetKj128HisSubStation"
+            mUrl = "GetKj128HisStation"
         }else if searchTitle == "历史区域信息" {
             mUrl = "GetKj128HisAreaInfo"
         }else {
@@ -200,11 +201,18 @@ extension KJ128HistoryDataListVC : UITableViewDelegate,UITableViewDataSource {
             cell.label1.text = "\(model.StationName ?? "") \(model.Place ?? "")"
              cell.label2bgView.isHidden = true
             cell.label3.text = "分站编号: \(model.StationCode ?? "")"
-            cell.label4.text = "状态: \(model.StationState ?? "")"
+            var stateStr = "正常"
+            if(model.StationState == 1){
+                stateStr = "传输分站故障"
+            }else if ( model.StationState == 2){
+                stateStr = "读卡器故障"
+            }
+            cell.label4.text = "状态: \(stateStr)"
             cell.label5.isHidden = true
             cell.label6.text = "开始时间: \(model.StartAlTime ?? "")"
             cell.label7.text = "结束时间: \(model.EndAlTime ?? "")"
-            cell.label8.text = "持续时间: \(model.AlarmTime ?? "")分钟"
+            cell.label8.isHidden = true;
+//            cell.label8.text = "持续时间: \(model.AlarmTime ?? "")分钟"
         }else if searchTitle == "历史区域信息" {
             cell.label1.text = "所在区域: \(model.AreaName ?? "")"
              cell.label2titleLabel.text = "所在部门:"
@@ -242,7 +250,7 @@ extension KJ128HistoryDataListVC : UITableViewDelegate,UITableViewDataSource {
         }else if searchTitle == "历史求救报警" {
             return 120
         }else if searchTitle == "历史分站状态" {
-            return 120
+            return 100
         }else if searchTitle == "历史区域信息" {
             return 120
         }else {

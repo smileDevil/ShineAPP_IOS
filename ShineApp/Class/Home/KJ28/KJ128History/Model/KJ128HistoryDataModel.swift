@@ -19,7 +19,7 @@ class KJ128HistoryDataModel: NSObject {
     var StationName : String!
     var StationCode : String!
     var Place : String!
-    var StationState : String!
+    var StationState : NSNumber = 0
     var RingNetworkAddress : String!
     var RingNetworkState : String!
     var StartAlTime : String!

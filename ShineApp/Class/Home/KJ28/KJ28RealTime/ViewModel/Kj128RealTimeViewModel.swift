@@ -28,7 +28,13 @@ extension Kj128RealTimeViewModel{
        func request128RealTimePeopleData( finishedCallBack:@escaping () -> ()){
            //1:定义参数
            let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-           let requestUrl = REQUESTURL + "GetKj128RealTimeInfo"
+//           let requestUrl = REQUESTURL + "GetKj128RealTimeInfo"
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+        if requestUrl == "" {
+            requestUrl = REQUESTURL + "GetKj128RealTimeInfo"
+        }else{
+            requestUrl = requestUrl + "GetKj128RealTimeInfo"
+        }
            let parameters = ["Minecode":mineCode]
            NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
                guard let resultDic =  result as? [String : NSObject]else {
@@ -54,7 +60,13 @@ extension Kj128RealTimeViewModel{
     //获取区域信息
     func request128AreaInfo(finishedCallBack:@escaping () -> ()){
         let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-        let requestUrl = REQUESTURL + "GetKj128AreaInfo"
+//        let requestUrl = REQUESTURL + "GetKj128AreaInfo"
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+               if requestUrl == "" {
+                   requestUrl = REQUESTURL + "GetKj128AreaInfo"
+               }else{
+                   requestUrl = requestUrl + "GetKj128AreaInfo"
+               }
         let parameters = ["Minecode" : mineCode,"AreaCode":""]
         NetworkTools.requestData(type: .GET, url: requestUrl,paramenters: parameters) { (result) in
             guard let resultDic = result as? [String : NSObject] else {
@@ -83,7 +95,13 @@ extension Kj128RealTimeViewModel{
     //获取分站状态
       func request128StationState(finishedCallBack:@escaping () -> ()){
           let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-          let requestUrl = REQUESTURL + "GetKj128BaseSubStationInfo"
+//          let requestUrl = REQUESTURL + "GetKj128BaseSubStationInfo"
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+                      if requestUrl == "" {
+                          requestUrl = REQUESTURL + "GetKj128BaseSubStationInfo"
+                      }else{
+                          requestUrl = requestUrl + "GetKj128BaseSubStationInfo"
+                      }
           let parameters = ["Minecode" : mineCode]
           NetworkTools.requestData(type: .GET, url: requestUrl,paramenters: parameters) { (result) in
               guard let resultDic = result as? [String : NSObject] else {
@@ -113,7 +131,13 @@ extension Kj128RealTimeViewModel{
     //获取报警信息
     func request128Waring(url:String, finishedCallBack:@escaping () -> ()){
             let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-            let requestUrl = REQUESTURL + url
+//            let requestUrl = REQUESTURL + url
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+                            if requestUrl == "" {
+                                requestUrl = REQUESTURL + url
+                            }else{
+                                requestUrl = requestUrl + url
+                            }
         let parameters = ["Minecode" : mineCode,"JobCardCode":"","Name":""]
             NetworkTools.requestData(type: .GET, url: requestUrl,paramenters: parameters) { (result) in
                 guard let resultDic = result as? [String : NSObject] else {

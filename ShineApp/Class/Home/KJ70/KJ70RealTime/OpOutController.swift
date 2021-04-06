@@ -12,7 +12,7 @@ private let HEAD_VIEW_HEIGHT = 40
 private let CellStr : String = "RealTimeOpenOutCell"
 private var mModelList : [RealTimeOpenOutModel] = [RealTimeOpenOutModel]()
 private var countLabel : UILabel = UILabel()
-class OpOutController: UIViewController {
+class OpOutController: BaseViewController {
     private lazy var myViewModel : RealTimeRequestModel = RealTimeRequestModel()
       private var noDataView : ListStateView = ListStateView()
     fileprivate lazy var tableView : UITableView  = {

@@ -52,6 +52,7 @@ let jCycleViewMarginTop = isIphoneX ? 40:20
 let jCycleViewMargin = isIphoneX ? 30:30
 let jCycleTopMargin = isIphoneX ? 45:30;
 let typeViewMarginCycleView = isIphoneX ? 45:30
+let commonLeftMargin = jCycleViewMargin
 
 //颜色
 let mainColor = UIColor.init(r: 26, g: 32, b: 64)
@@ -69,12 +70,16 @@ let placeholderColor = UIColor.init(r: 176, g: 195, b: 210)
 let contentTextColor = UIColor.init(r: 255, g: 255, b: 255)
 let lineColor = UIColor.init(r: 42, g: 53, b: 78)
 //字号
+
+let smallTitleFontSize = UIFont.systemFont(ofSize: 13)
 let commonTextFontSize = UIFont.systemFont(ofSize: 14)
 let frameTitleFontSize = UIFont.systemFont(ofSize: 16)
-//view
+//views
 // 统一cell 弧度
 let clickRadius = 8
 
 //url
-let REQUESTURL = "http://172.16.19.127:10010/SHHWebService.asmx/"
-//let REQUESTURL = "http://dev.3shine.com:8100/SHHWebService.asmx/"
+//let REQUESTURL = "http://172.16.19.128:8089/SHHWebService.asmx/"
+//let REQUESTURL = "https://dev.3shine.com:43100/SHHWebService.asmx/"
+//let REQUESTURL = "http://172.16.19.33:81/SHHWebService.asmx/"
+let REQUESTURL = "https://www.dev.3shine.com:8150/SHHWebService.asmx/"

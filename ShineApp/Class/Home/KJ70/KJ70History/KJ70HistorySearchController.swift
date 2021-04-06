@@ -10,7 +10,7 @@ import UIKit
 
 let lineMargin : CGFloat = 10
 
-class KJ70HistorySearchController: UIViewController {
+class KJ70HistorySearchController: BaseViewController {
     var pickerView:UIPickerView!
     var datePicker:UIDatePicker!
     var pickerBottomView : UIView!
@@ -24,13 +24,13 @@ class KJ70HistorySearchController: UIViewController {
     @IBOutlet weak var beginTimeBgView: UIView!
     @IBOutlet weak var begintTimeLabel: UILabel!
     @IBOutlet weak var beginTimeBtn: UIButton!
-    private var beginDate : Date!
     @IBOutlet weak var endTimeBgView: UIView!
     @IBOutlet weak var endTimeBtn: UIButton!
     @IBOutlet weak var endTimeLabel: UILabel!
     private var endDate : Date!
+      private var beginDate : Date!
     
-    fileprivate let navTitleArr : [String] = ["历史报警","历史预警","历史设备故障","历史断电","历史模拟量","历史开关量"]//,"历史模拟量折线图"
+    fileprivate let navTitleArr : [String] = ["历史报警","历史预警","历史设备故障","历史断电","历史模拟量","历史开关量","历史模拟量折线图"]//,"历史模拟量折线图"
     fileprivate var selectTitle = "历史报警"
     private lazy var myViewModel : RealTimeWaringViewModel = RealTimeWaringViewModel()
     private lazy var deviceNameTypeArr : [String] = [String]()
@@ -112,7 +112,16 @@ extension KJ70HistorySearchController {
     //设备提交
     @objc func deviceSelect(){
         mFlag = 4
-        createPickView(flag: mFlag)
+        if self.deviceTypeArr.count <= 0 {
+            AlertHepler.showAlert(titleStr: "提示", msgStr: "没有获取到设备信息,是否重新获取", currentVC: self, cancelHandler: { (canleAction) in
+                return
+            }, otherBtns: ["确认"]) { (makesureAction) in
+                self.getDeviceTypes()
+            }
+        }else{
+              createPickView(flag: mFlag)
+        }
+      
         
     }
     //传感器选择
@@ -191,11 +200,11 @@ extension KJ70HistorySearchController {
                             }, otherBtns: nil, otherHandler: nil)
                        return
             }
-//            let vc : LineChartsVC = LineChartsVC()
-//            vc.beginDate = self.begintTimeLabel.text! + " 00:00:00"
-//            vc.endDate = self.endTimeLabel.text! + " 23:59:29"
-//            vc.mSensor = selectSensorModel == nil ? "" : String(selectSensorModel.SensorNum)
-//            self.navigationController?.pushViewController(vc, animated: true)
+            let vc : LineChartsVC = LineChartsVC()
+            vc.beginDate = self.begintTimeLabel.text! + " 00:00:00"
+            vc.endDate = self.endTimeLabel.text! + " 23:59:29"
+            vc.mSensor = selectSensorModel == nil ? "" : String(selectSensorModel.SensorNum)
+            self.navigationController?.pushViewController(vc, animated: true)
         }else{
             let vc : Kj70HistoryListController = Kj70HistoryListController()
             vc.beginDate = self.begintTimeLabel.text! + " 00:00:00"
@@ -285,6 +294,7 @@ extension KJ70HistorySearchController:UIPickerViewDelegate,UIPickerViewDataSourc
                 self.sensorTypeArr.removeAll()
                 
                 if(row != 0 ){
+                    
                     self.selectDeviceModel = self.deviceTypeArr[row - 1]
                     myViewModel.getSensorList(typeCode: self.selectDeviceModel.TypeCode
                     , type: self.selectDeviceModel.Type) {

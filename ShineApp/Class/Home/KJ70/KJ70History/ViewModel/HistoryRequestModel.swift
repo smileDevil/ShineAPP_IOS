@@ -10,12 +10,12 @@ import UIKit
 
 class HistoryRequestModel: NSObject {
     //设备状态
-      var historyDataModels : [KJ70HistoryDataModel] = [KJ70HistoryDataModel]()
-      var historyDataCount : NSInteger = 0
+    var historyDataModels : [KJ70HistoryDataModel] = [KJ70HistoryDataModel]()
+    var historyDataCount : NSInteger = 0
     //折线图数据
     var lineDataModels : [SimulatesCurveInfoModel] = [SimulatesCurveInfoModel]()
     
-     var mUrl :String = ""
+    var mUrl :String = ""
     var mPageSize = 50
     var mIndex = 0
     var mBeginTime = ""
@@ -29,14 +29,20 @@ class HistoryRequestModel: NSObject {
         mEndTime = endTime
         mTypeCode = typeCode
         mSensornum = sensornum
-//        if mSensornum != "" {
-//            mTypeCode = ""
-//        }
+        //        if mSensornum != "" {
+        //            mTypeCode = ""
+        //        }
         mIndex = index
         mPageSize = pageSize
         //1:定义参数
         let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-        let requestUrl = REQUESTURL + mUrl
+        //        let requestUrl = REQUESTURL + mUrl
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+        if requestUrl == "" {
+            requestUrl = REQUESTURL + mUrl
+        }else{
+            requestUrl = requestUrl + mUrl
+        }
         let parameters = ["Minecode":mineCode,"BeginTime":mBeginTime,"EndTime":mEndTime,"RowIndex":mIndex,"RowSize":mPageSize, "Typecode":mTypeCode,"Sensornum":mSensornum] as [String : Any]
         NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
             guard let resultDic =  result as? [String : NSObject]else {
@@ -51,7 +57,7 @@ class HistoryRequestModel: NSObject {
             self.historyDataCount = resultCount
             if resultArr.count != 0 {
                 if self.mIndex == 0 {
-                self.historyDataModels.removeAll()
+                    self.historyDataModels.removeAll()
                 }
                 for dic in resultArr {
                     let model : KJ70HistoryDataModel = KJ70HistoryDataModel.init(dict: dic)
@@ -64,33 +70,39 @@ class HistoryRequestModel: NSObject {
     
     func GetKj70HisSimulatesCurveInfo(sensorNum:String,beginTime:String,endTime:String, finishedCallBack:@escaping () -> ()){
         
-            let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-              let requestUrl = REQUESTURL + "GetKj70HisSimulatesCurveInfo"
-              let parameters = ["Minecode":mineCode,"BeginTime":beginTime,"EndTime":endTime,"Sensornums":sensorNum] as [String : Any]
-              NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
-                  guard let resultDic =  result as? [String : NSObject]else {
-                      return
-                  }
-                  guard let resultCount = resultDic["total"] as? NSInteger else {
-                      return
-                  }
-                guard let resultArrBefor = resultDic["rows"] as? [[[String : NSObject]]] else {
-                      return
-                  }
-                guard let resultArr = resultArrBefor[0] as? [[String : NSObject]] else {
-                                     return
-                                 }
+        let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
+        //              let requestUrl = REQUESTURL + "GetKj70HisSimulatesCurveInfo"
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+        if requestUrl == "" {
+            requestUrl = REQUESTURL + "GetKj70HisSimulatesCurveInfo"
+        }else{
+            requestUrl = requestUrl + "GetKj70HisSimulatesCurveInfo"
+        }
+        let parameters = ["Minecode":mineCode,"BeginTime":beginTime,"EndTime":endTime,"Sensornums":sensorNum] as [String : Any]
+        NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
+            guard let resultDic =  result as? [String : NSObject]else {
+                return
+            }
+            guard let resultCount = resultDic["total"] as? NSInteger else {
+                return
+            }
+            guard let resultArrBefor = resultDic["rows"] as? [[[String : NSObject]]] else {
+                return
+            }
+            guard let resultArr = resultArrBefor[0] as? [[String : NSObject]] else {
+                return
+            }
+            
+            if resultArr.count != 0 {
                 
-                  if resultArr.count != 0 {
-              
-                      self.historyDataModels.removeAll()
-                  
-                      for dic in resultArr {
-                      let model : SimulatesCurveInfoModel = SimulatesCurveInfoModel.init(dict: dic)
-                      self.lineDataModels.append(model)
-                      }
-                  }
-                  finishedCallBack()
-              }
+                self.historyDataModels.removeAll()
+                
+                for dic in resultArr {
+                    let model : SimulatesCurveInfoModel = SimulatesCurveInfoModel.init(dict: dic)
+                    self.lineDataModels.append(model)
+                }
+            }
+            finishedCallBack()
+        }
     }
 }

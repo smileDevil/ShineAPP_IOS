@@ -13,7 +13,7 @@ private let CellStr : String = "KJ128RealTimePeopleCell"
 private var mModelList : [KJ128RealTimePeopleModel] = [KJ128RealTimePeopleModel]()
 private var countLabel : UILabel = UILabel()
 private var noDataView : ListStateView = ListStateView()
-class KJ128RealTimePoepleVC: UIViewController {
+class KJ128RealTimePoepleVC: BaseViewController {
     private lazy var myViewModel : Kj128RealTimeViewModel = Kj128RealTimeViewModel()
     fileprivate lazy var tableView : UITableView  = {
         let tableview = UITableView(frame: CGRect(x: 0, y: HEAD_VIEW_HEIGHT, width: Int(mScreenW), height: Int(mScreenH) - HEAD_VIEW_HEIGHT - cvTopNavHeight - Int(navigationBarHeight)))
@@ -40,6 +40,7 @@ class KJ128RealTimePoepleVC: UIViewController {
         countLabel.textAlignment = .left
         headView.addSubview(countLabel)
         self.view.addSubview(tableView)
+        
         noDataView.frame = CGRect(x: 0, y: HEAD_VIEW_HEIGHT, width: Int(mScreenW), height: Int(mScreenH) - HEAD_VIEW_HEIGHT - cvTopNavHeight - Int(navigationBarHeight))
         noDataView.isHidden = true
         self.view.addSubview(noDataView)

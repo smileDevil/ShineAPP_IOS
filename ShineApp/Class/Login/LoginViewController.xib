@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,6 +13,7 @@
                 <outlet property="loginBtn" destination="8fV-xj-ovA" id="NsX-QH-wN3"/>
                 <outlet property="psdBackView" destination="ODE-CJ-f02" id="L2v-ey-LYp"/>
                 <outlet property="psdTextFiled" destination="nJC-8H-wBJ" id="eKg-iQ-yFd"/>
+                <outlet property="settingBtn" destination="6kL-aK-N1O" id="9WS-d2-q3V"/>
                 <outlet property="userBackView" destination="pqi-mQ-WZa" id="4Y5-R6-J29"/>
                 <outlet property="userTextFiled" destination="z21-kb-ERU" id="lfw-a6-6gZ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="v3Q-gB-srG"/>
@@ -133,7 +134,7 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37k-WO-bOK">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37k-WO-bOK">
                     <rect key="frame" x="337" y="482" width="45" height="26"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="26" id="KMB-R0-D46"/>
@@ -203,6 +204,27 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kL-aK-N1O">
+                    <rect key="frame" x="349" y="50" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="VBC-AV-cVz"/>
+                        <constraint firstAttribute="height" constant="50" id="lLZ-mK-lPN"/>
+                    </constraints>
+                    <state key="normal" image="setting.png"/>
+                    <connections>
+                        <action selector="settingBtnClick:" destination="-1" eventType="touchUpInside" id="iWK-Ev-XCk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IM-Qf-KGt">
+                    <rect key="frame" x="349" y="50" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="FXE-Vz-7QQ"/>
+                        <constraint firstAttribute="height" constant="50" id="jHn-ri-DKo"/>
+                    </constraints>
+                    <connections>
+                        <action selector="settingBtnClick:" destination="-1" eventType="touchUpInside" id="Lbn-qt-C7G"/>
+                    </connections>
+                </button>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPk-SW-Lge">
                     <rect key="frame" x="1" y="1" width="412" height="894"/>
                     <subviews>
@@ -234,6 +256,7 @@
                 <constraint firstItem="pqi-mQ-WZa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="JPh-Xb-F8e"/>
                 <constraint firstItem="xEX-1t-KgM" firstAttribute="top" secondItem="WST-Tj-Ozh" secondAttribute="bottom" id="Lro-7v-v9M"/>
                 <constraint firstItem="8fV-xj-ovA" firstAttribute="leading" secondItem="ODE-CJ-f02" secondAttribute="leading" id="Rqg-sq-n2B"/>
+                <constraint firstAttribute="trailing" secondItem="6kL-aK-N1O" secondAttribute="trailing" constant="15" id="TDB-mv-5jv"/>
                 <constraint firstItem="MJa-vk-vjf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TPq-pN-9V5"/>
                 <constraint firstItem="lPk-SW-Lge" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="XJC-yn-vgS"/>
                 <constraint firstAttribute="trailing" secondItem="37k-WO-bOK" secondAttribute="trailing" constant="32" id="YaN-D4-0DS"/>
@@ -241,12 +264,15 @@
                 <constraint firstItem="eFf-eh-j0M" firstAttribute="top" secondItem="MHu-1b-BGy" secondAttribute="bottom" id="dfA-HS-fN1"/>
                 <constraint firstItem="tJw-Zd-Pot" firstAttribute="trailing" secondItem="8fV-xj-ovA" secondAttribute="trailing" id="fHP-mX-iPC"/>
                 <constraint firstItem="8fV-xj-ovA" firstAttribute="trailing" secondItem="ODE-CJ-f02" secondAttribute="trailing" id="gOA-Dv-GfT"/>
+                <constraint firstItem="0IM-Qf-KGt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="gfE-AJ-XEY"/>
                 <constraint firstItem="ODE-CJ-f02" firstAttribute="top" secondItem="pqi-mQ-WZa" secondAttribute="bottom" constant="30" id="jpw-wJ-0Rh"/>
                 <constraint firstItem="MJa-vk-vjf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="150" id="jrJ-mt-u1d"/>
                 <constraint firstAttribute="trailing" secondItem="lPk-SW-Lge" secondAttribute="trailing" constant="1" id="mdq-IH-lPa"/>
+                <constraint firstAttribute="trailing" secondItem="0IM-Qf-KGt" secondAttribute="trailing" constant="15" id="pWg-jh-Fpf"/>
                 <constraint firstItem="8fV-xj-ovA" firstAttribute="top" secondItem="ODE-CJ-f02" secondAttribute="bottom" constant="60" id="qiQ-Sa-gcD"/>
                 <constraint firstItem="MHu-1b-BGy" firstAttribute="top" secondItem="xEX-1t-KgM" secondAttribute="bottom" id="tct-2C-prP"/>
                 <constraint firstItem="xEX-1t-KgM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wgV-Hm-iW6"/>
+                <constraint firstItem="6kL-aK-N1O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="xHK-cy-jfD"/>
                 <constraint firstItem="lPk-SW-Lge" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="xXw-tf-ps3"/>
                 <constraint firstItem="ODE-CJ-f02" firstAttribute="leading" secondItem="pqi-mQ-WZa" secondAttribute="leading" id="yF5-em-uWn"/>
                 <constraint firstItem="tJw-Zd-Pot" firstAttribute="top" secondItem="8fV-xj-ovA" secondAttribute="bottom" constant="20" id="yYT-1e-DUW"/>
@@ -261,6 +287,7 @@
         <image name="loginLog.png" width="186" height="186"/>
         <image name="mine_blue.png" width="22" height="22"/>
         <image name="password.png" width="30" height="30"/>
+        <image name="setting.png" width="31" height="31"/>
         <image name="weixin.png" width="60" height="60"/>
     </resources>
 </document>

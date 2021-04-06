@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else {return}
         
         let window = UIWindow(windowScene: windowScene)
-        let root  = LoginViewController()
+        let root  = MyNavigationController(rootViewController: LoginViewController())
        // window.rootViewController = UIHostingController(rootView: contentView)
         window.rootViewController = root;
         self.window = window
@@ -55,6 +55,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
+    
+    
 
 
 }

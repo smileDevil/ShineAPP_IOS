@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class KJ128HistorySearchVC: UIViewController
+class KJ128HistorySearchVC: BaseViewController
 {
     let lineMargin : CGFloat = 10
     var pickerView:UIPickerView!
@@ -17,6 +17,7 @@ class KJ128HistorySearchVC: UIViewController
       var datePickView : UIView!
       var navTitView : NavTitleView = NavTitleView()
       var mFlag = 1 // 1 title 值 2 开始时间  3 结束时间 4 设备类型选择 5 传感器选择
+    private var sensorLabel : UILabel!
     private var jobCardSelecttView = TypeSelectView()
     private lazy var jobCardNameTypeArr : [String] = [String]()
      private lazy var jobCardTypeArr : [PersonNameModel] = [PersonNameModel]()
@@ -58,7 +59,7 @@ extension KJ128HistorySearchVC {
         self.view.addSubview(topTimeView)
     
         //测点信息选择标签
-        let sensorLabel = UILabel(frame: CGRect(x: 15, y: topTimeView.frame.height + topTimeView.frame.origin.y + lineMargin, width: 100, height: 20))
+        sensorLabel = UILabel(frame: CGRect(x: 15, y: topTimeView.frame.height + topTimeView.frame.origin.y + lineMargin, width: 100, height: 20))
         sensorLabel.textColor  = UIColor.white
         sensorLabel.text = "卡号"
         sensorLabel.font = UIFont.systemFont(ofSize: 13)
@@ -235,17 +236,40 @@ extension KJ128HistorySearchVC:UIPickerViewDelegate,UIPickerViewDataSource{
             let row = pickerView.selectedRow(inComponent: 0)
             if mFlag == 1 {
                 let titleStr =  navTitleArr[row]
+                if(titleStr == "历史超员报警" ){
+//                    jobCardSelecttView.isHidden = true
+//                    sensorLabel.isHidden = true
+//                    topTimeView.isHidden = true
+                    jobCardSelecttView.isUserInteractionEnabled = false
+                    beginTimeBtn.isUserInteractionEnabled = false
+                    endTimeBtn.isUserInteractionEnabled = false
+                }else if(titleStr == "历史分站状态"){
+//                    jobCardSelecttView.isHidden = true
+//                    sensorLabel.isHidden = true
+//                    topTimeView.isHidden = false
+                    jobCardSelecttView.isUserInteractionEnabled = false
+                                      beginTimeBtn.isUserInteractionEnabled = true
+                                      endTimeBtn.isUserInteractionEnabled = true
+                }
+                else{
+//                     jobCardSelecttView.isHidden = false
+//                    sensorLabel.isHidden = false
+//                    topTimeView.isHidden = false
+                    jobCardSelecttView.isUserInteractionEnabled = true
+                    beginTimeBtn.isUserInteractionEnabled = true
+                    endTimeBtn.isUserInteractionEnabled = true
+                }
                 self.selectTitle = titleStr
                 self.navTitView.titleBtn?.setTitle(titleStr, for: .normal)
             }
             if mFlag == 4 {
                 let titler = jobCardNameTypeArr[row]
+               
                 self.jobCardSelecttView.typeNameLabel.text = titler
          
                 
                 if(row != 0 ){
                     self.selectjobCardModel = self.jobCardTypeArr[row - 1]
-                    
                     
                 }else {
                     self.selectjobCardModel = nil

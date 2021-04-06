@@ -14,7 +14,7 @@ private let typeCellStr = "TypeViewCell"
 private var mModelList : [KJ128RealTimeWaringModel] = [KJ128RealTimeWaringModel]()
 private var mUrl : String =  "GetKj128RTOverTimeInfo"
 private var mTypName : String = ""
-class KJ128RealTimeWaringVC: UIViewController {
+class KJ128RealTimeWaringVC: BaseViewController {
     private lazy var myViewModel : Kj128RealTimeViewModel = Kj128RealTimeViewModel()
     private lazy var sensorNameTypeArr : [String] = [String]()
     private lazy var sensorTypeArr : [KJ70DeviceTypeModel] = [KJ70DeviceTypeModel]()

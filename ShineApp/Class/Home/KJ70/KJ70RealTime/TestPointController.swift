@@ -13,7 +13,7 @@ private let CellStr : String = "RealTimeTestPointCell"
 private var mModelList : [RealTimeTestPointModel] = [RealTimeTestPointModel]()
 private var countLabel : UILabel = UILabel()
 
-class TestPointController: UIViewController {
+class TestPointController: BaseViewController {
     private var noDataView : ListStateView = ListStateView()
     private lazy var myViewModel : RealTimeRequestModel = RealTimeRequestModel()
       fileprivate lazy var tableView : UITableView  = {

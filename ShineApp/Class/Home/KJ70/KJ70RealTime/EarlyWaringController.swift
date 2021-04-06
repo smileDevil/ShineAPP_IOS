@@ -13,7 +13,7 @@ private let CellStr : String = "RealTimeWaringCell"
 private var mModelList : [EarlyWaringModel] = [EarlyWaringModel]()
 private var countLabel : UILabel = UILabel()
 private var noDataView : ListStateView = ListStateView()
-class EarlyWaringController: UIViewController {
+class EarlyWaringController: BaseViewController {
 
     private lazy var myViewModel : RealTimeRequestModel = RealTimeRequestModel()
     

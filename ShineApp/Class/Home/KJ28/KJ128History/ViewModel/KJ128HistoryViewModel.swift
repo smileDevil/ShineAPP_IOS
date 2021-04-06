@@ -29,7 +29,13 @@ extension KJ128HistoryViewModel{
        func getKJ128PersonLists( finishedCallBack:@escaping () -> ()){
            //1:定义参数
            let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-           let requestUrl = REQUESTURL + "GetKj128NameListInfo"
+//           let requestUrl = REQUESTURL + "GetKj128NameListInfo"
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+                      if requestUrl == "" {
+                          requestUrl = REQUESTURL + "GetKj128NameListInfo"
+                      }else{
+                          requestUrl = requestUrl + "GetKj128NameListInfo"
+                      }
            let parameters = ["Minecode":mineCode]
            NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
                guard let resultDic =  result as? [String : NSObject]else {
@@ -64,13 +70,22 @@ extension KJ128HistoryViewModel{
         mPageSize = pageSize
         //1:定义参数
         let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-        let requestUrl = REQUESTURL + url
+//        let requestUrl = REQUESTURL + url
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+                          if requestUrl == "" {
+                              requestUrl = REQUESTURL + url
+                          }else{
+                              requestUrl = requestUrl + url
+                          }
         var parameters = ["Minecode":mineCode] as [String : Any]
         if(mUrl == "GetKj128HisSubStation" || mUrl == "GetKj128HisOvermanReport"  ){
             parameters = ["Minecode" : mineCode,"RowIndex" : mIndex ,"RowSize" : mPageSize]
-        }else if(mUrl == "GetKj128HisHelpAlarm" || mUrl == "GetKj128HisOvermanReport"  ){
+        }else if(mUrl == "GetKj128HisHelpAlarm"){
             parameters = ["Minecode" : mineCode,"RowIndex" : mIndex ,"RowSize" : mPageSize,"JobCardCode":mJobCardCode]
-        }else{
+        }else if (mUrl == "GetKj128HisStation"){
+            parameters = ["Minecode" : mineCode,"BeginTime":mBeginTime,"EndTime":mEndTime,"RowIndex" : mIndex ,"RowSize" : mPageSize,"StationCode":"","Name":""]
+        }
+        else{
             parameters = ["Minecode" : mineCode,"BeginTime":mBeginTime,"EndTime":mEndTime,"RowIndex" : mIndex ,"RowSize" : mPageSize,"JobCardCode":mJobCardCode]
         }
         

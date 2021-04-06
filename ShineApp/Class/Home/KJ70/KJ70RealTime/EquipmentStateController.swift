@@ -65,7 +65,7 @@ class EquipmentStateController: UIViewController {
             tableView.mj_header = header
             // 4.开始刷新
             tableView.mj_header.beginRefreshing()
-       }
+       } 
     
     @objc func getData(){
         //获取数据

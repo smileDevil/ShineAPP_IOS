@@ -26,6 +26,8 @@ class RealTimeRequestModel: NSObject {
     var earlyWaringCount : NSInteger = 0
     //设备类型
     
+    
+    
     lazy var deviceTypeList: [KJ70DeviceTypeModel] =  [KJ70DeviceTypeModel]()
     
     //获取煤矿的数量
@@ -36,7 +38,13 @@ extension RealTimeRequestModel{
     func requestEquipmentData( finishedCallBack:@escaping () -> ()){
         //1:定义参数
         let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-        let requestUrl = REQUESTURL + "GetKj70RealTimeFaultInfo"
+//        let requestUrl = REQUESTURL + "GetKj70RealTimeFaultInfo"
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+               if requestUrl == "" {
+                   requestUrl = REQUESTURL + "GetKj70RealTimeFaultInfo"
+               }else{
+                   requestUrl = requestUrl + "GetKj70RealTimeFaultInfo"
+               }
         let parameters = ["Minecode":mineCode,"TypeCode":"","Sensornum":""]
         NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
             guard let resultDic =  result as? [String : NSObject]else {
@@ -63,7 +71,13 @@ extension RealTimeRequestModel{
     func requestTestPointData( finishedCallBack:@escaping () -> ()){
         //1:定义参数
         let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-        let requestUrl = REQUESTURL + "GetKj70RealTimeSensorInfo"
+//        let requestUrl = REQUESTURL + "GetKj70RealTimeSensorInfo"
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+                      if requestUrl == "" {
+                          requestUrl = REQUESTURL + "GetKj70RealTimeSensorInfo"
+                      }else{
+                          requestUrl = requestUrl + "GetKj70RealTimeSensorInfo"
+                      }
         let parameters = ["Minecode":mineCode]
         NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
             guard let resultDic =  result as? [String : NSObject]else {
@@ -90,7 +104,13 @@ extension RealTimeRequestModel{
     func requestStationData( finishedCallBack:@escaping () -> ()){
         //1:定义参数
         let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-        let requestUrl = REQUESTURL + "GetKj70RealTimeStationInfo"
+//        let requestUrl = REQUESTURL + "GetKj70RealTimeStationInfo"
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+                           if requestUrl == "" {
+                               requestUrl = REQUESTURL + "GetKj70RealTimeStationInfo"
+                           }else{
+                               requestUrl = requestUrl + "GetKj70RealTimeStationInfo"
+                           }
         let parameters = ["Minecode":mineCode]
         NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
             guard let resultDic =  result as? [String : NSObject]else {
@@ -118,7 +138,13 @@ extension RealTimeRequestModel{
        func requestOpenoutData( finishedCallBack:@escaping () -> ()){
            //1:定义参数
            let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-           let requestUrl = REQUESTURL + "GetKj70RTControlBreakInfo"
+//           let requestUrl = REQUESTURL + "GetKj70RTControlBreakInfo"
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+                                  if requestUrl == "" {
+                                      requestUrl = REQUESTURL + "GetKj70RTControlBreakInfo"
+                                  }else{
+                                      requestUrl = requestUrl + "GetKj70RTControlBreakInfo"
+                                  }
            let parameters = ["Minecode":mineCode,"SensorNum":""]
            NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
                guard let resultDic =  result as? [String : NSObject]else {
@@ -147,7 +173,13 @@ extension RealTimeRequestModel{
           func requestEarlyWaringData( finishedCallBack:@escaping () -> ()){
               //1:定义参数
               let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-              let requestUrl = REQUESTURL + "GetKj70RealTimeWarnAlarmInfo"
+//              let requestUrl = REQUESTURL + "GetKj70RealTimeWarnAlarmInfo"
+            var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+                                             if requestUrl == "" {
+                                                 requestUrl = REQUESTURL + "GetKj70RealTimeWarnAlarmInfo"
+                                             }else{
+                                                 requestUrl = requestUrl + "GetKj70RealTimeWarnAlarmInfo"
+                                             }
               let parameters = ["Minecode":mineCode,"TypeCode":"","Sensornum":""]
               NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
                   guard let resultDic =  result as? [String : NSObject]else {
@@ -175,7 +207,13 @@ extension RealTimeRequestModel{
     func getDeviceTypeList(finishedCallBack:@escaping () -> ()){
          //1:定义参数
          let mineCode = UserDefaults.standard.string(forKey: "mineCode") ?? ""
-         let requestUrl = REQUESTURL + "/GetKj70AllDeviceType"
+//         let requestUrl = REQUESTURL + "/GetKj70AllDeviceType"
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+        if requestUrl == "" {
+            requestUrl = REQUESTURL + "GetKj70AllDeviceType"
+        }else{
+            requestUrl = requestUrl + "GetKj70AllDeviceType"
+        }
          let parameters = ["Minecode":mineCode]
          NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
              guard let resultDic =  result as? [String : NSObject]else {
@@ -200,7 +238,13 @@ extension RealTimeRequestModel{
     
     func getMineList(finishedCallBack:@escaping () -> ()){
             //1:定义参数
-            let requestUrl = REQUESTURL + "/GetOtherMineListInfo"
+//            let requestUrl = REQUESTURL + "/GetOtherMineListInfo"
+        var requestUrl = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+               if requestUrl == "" {
+                   requestUrl = REQUESTURL + "GetOtherMineListInfo"
+               }else{
+                   requestUrl = requestUrl + "GetOtherMineListInfo"
+               }
             let parameters = ["Minecode":""]
             NetworkTools.requestData(type: .GET, url: requestUrl, paramenters: parameters) { (result) in
                 guard let resultDic =  result as? [String : NSObject]else {

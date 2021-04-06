@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KJ70DataController: UIViewController {
+class 	KJ70DataController: BaseViewController {
     var pickerView:UIPickerView!
     var pickerBottomView : UIView!
     var dismissView :UIView!

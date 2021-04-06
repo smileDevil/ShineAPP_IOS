@@ -16,6 +16,12 @@ enum MethodType {
 
 class NetworkTools {
     class func requestData(type:MethodType, url : String , paramenters: [String : Any]? = nil,finsihedCallBack : @escaping (_ result : AnyObject) -> ()) {
+        
+        let manager = SessionManager.default
+                manager.delegate.sessionDidReceiveChallenge = {
+            session,challenge in
+            return    (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!))
+        }
         //获取类型
         let method = type == .GET ? HTTPMethod.get : HTTPMethod.post
         //URLEncoding 请求get   JSONEncodiing 请求post

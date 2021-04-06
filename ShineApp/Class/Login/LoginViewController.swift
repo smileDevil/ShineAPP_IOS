@@ -17,10 +17,15 @@ class LoginViewController: BaseViewController {
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var loadImageView: UIImageView!
     @IBOutlet weak var loadBackView: UIView!
+    @IBOutlet weak var settingBtn: UIButton!
     //创建viewmodel实例
     private lazy var loginViewModel: LoginViewModel = LoginViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         setUpViews();
         //网络检测
         currentNetReachability()
@@ -35,6 +40,11 @@ class LoginViewController: BaseViewController {
         loadImageView.layer.add(momAnimation, forKey: "centerLayer")
         
     }
+    
+    @IBAction func settingBtnClick(_ sender: UIButton) {
+        self.navigationController?.pushViewController(SettingVC(), animated: true)
+    }
+    
     //进入组册页面
     @IBAction func registerBtnClick(_ sender: Any) {
 //        self.navigationController?.pushViewController(RegisterVC(), animated: true)
@@ -109,42 +119,46 @@ extension LoginViewController{
         if psdStr != "" {
             psdTextFiled.text = psdStr
         }
+        
+        self.settingBtn.isHidden  = false
+       // isShowSetting()
     }
+    
+    func isShowSetting(){
+             var url = UserDefaults.standard.string(forKey: "httpUrl") ?? ""
+                   if url == "" {
+                       url = REQUESTURL + "GetAppIsShowSetting"
+                   }else{
+                       url = url + "GetAppIsShowSetting"
+                   }
+             NetworkTools.requestData(type: .GET, url: url) { (result) in
+                if result.isKind(of: NSMutableString.self){
+                     self.settingBtn.isHidden  = true
+                    return
+                }
+                let resultDic = result as? [String : Bool]
+                if resultDic == nil {
+                    self.settingBtn.isHidden  = true
+                    return
+                }
+                let isShow : Bool = resultDic!["IsShowSetting"]!
+                if isShow {
+                    self.settingBtn.isHidden = false
+                }else{
+                    self.settingBtn.isHidden  = true
+                }
+             }
+         }
+     
     
     
     @objc func loginClick(){
         
-        var user : String = userTextFiled.text ?? ""
-        var psd : String = psdTextFiled.text ?? ""
-   
-//        var hasUser = false
-//        var userindex = 0
-//            let userArr = UserDefaults.standard.object(forKey: "userArr") as? [String] ?? [String]()
-//               let passArr = UserDefaults.standard.object(forKey: "passArr") as? [String] ?? [String]()
-//               for (index , str) in userArr .enumerated(){
-//                   if str == user {
-//                       hasUser = true
-//                       userindex = index
-//                   }
-//               }
-//        if !hasUser && user != "web" {
-//            AlertHepler.showAlert(titleStr: nil, msgStr: "用户名不存在", currentVC: self, cancelHandler: { (canleAction) in
-//                return
-//            }, otherBtns: nil, otherHandler: nil)
-//            return
-//        }else{
-//            if user != "web" {
-//                let inpass = passArr[userindex]
-//                if psd != inpass {
-//                    AlertHepler.showAlert(titleStr: nil, msgStr: "用户名密码不正确", currentVC: self, cancelHandler: { (canleAction) in
-//                                  return
-//                              }, otherBtns: nil, otherHandler: nil)
-//                              return
-//                }
-//            }
-//        }
-//        
-        
+       // UIApplication.shared.windows[0].rootViewController = MyNavigationController(rootViewController: KJ70DataController())
+       // return;
+        let user : String = userTextFiled.text ?? ""
+        let psd : String = psdTextFiled.text ?? ""
+            
         if(user.count <= 0) {
             AlertHepler.showAlert(titleStr: nil, msgStr: "用户名不能为空", currentVC: self, cancelHandler: { (canleAction) in
                 return
@@ -158,12 +172,13 @@ extension LoginViewController{
             return
         }
         
-        //        user = "web"
-        //        psd = "123"
-           
+
+//        let registerId = UserDefaults.standard.string(forKey: "registId") ?? ""
         
         loadBackView.isHidden = false
-        
+        //极光推送Rid传入数据库
+        loginViewModel.registerRid()
+        //登录操作
         loginViewModel.requestData(userName: user, psd: psd) {
             self.loadBackView.isHidden = true
             if(self.loginViewModel.mineModelList.count > 0 ){
@@ -174,6 +189,7 @@ extension LoginViewController{
                 UserDefaults.standard.set(psd, forKey: "password")
 
                 UIApplication.shared.windows[0].rootViewController = MyNavigationController(rootViewController: HomeController())
+               
                 
             }else{
                 if self.loginViewModel.loginReturnStr != "" {

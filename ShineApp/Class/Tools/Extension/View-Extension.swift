@@ -48,7 +48,7 @@ extension UIView {
     
        public var right: CGFloat {
            get {
-               return self.frame.size.width
+            return self.frame.size.width + self.frame.origin.x
            }
            
            set(newVal) {
@@ -63,7 +63,7 @@ extension UIView {
     public var bottom: CGFloat {
         
         get {
-            return self.frame.size.height
+            return self.frame.size.height + self.frame.origin.y
         }
         
         set(newVal) {
